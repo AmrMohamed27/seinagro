@@ -1,0 +1,195 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  font-size: 20px;
+  --radius: 0.625rem;
+
+  /* Seinagro Color Palette - Light */
+  --brand-forest: #01522E;
+  --brand-growth: #197B17;
+  --brand-harvest: #F27509;
+  --brand-harvest-ink: #B34F00;
+  --brand-wheat: #EAA546;
+  --earth-soil: #3B2A1E;
+  --earth-clay: #8A5A3B;
+  --surface-cream: #F7F2E8;
+  --surface-card: #FFFFFF;
+  --ink: #10231A;
+  --sky-mist: #99B5CB;
+
+  /* shadcn base token remapping - Light */
+  --background: var(--surface-cream);
+  --foreground: var(--ink);
+  --card: var(--surface-card);
+  --card-foreground: var(--ink);
+  --popover: var(--surface-card);
+  --popover-foreground: var(--ink);
+
+  --primary: var(--brand-forest);
+  --primary-foreground: #FFFFFF;
+
+  --secondary: #E9E4D8;
+  --secondary-foreground: var(--ink);
+
+  --muted: #EBE5D8;
+  --muted-foreground: #5C6E64;
+
+  --accent: var(--brand-harvest);
+  --accent-foreground: var(--ink);
+
+  --destructive: #D32F2F;
+  --destructive-foreground: #FFFFFF;
+
+  --border: #DCD5C5;
+  --input: #DCD5C5;
+  --ring: var(--brand-forest);
+
+  --sidebar: var(--surface-card);
+  --sidebar-foreground: var(--ink);
+  --sidebar-primary: var(--brand-forest);
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #EBE5D8;
+  --sidebar-accent-foreground: var(--ink);
+  --sidebar-border: #DCD5C5;
+  --sidebar-ring: var(--brand-forest);
+}
+
+.dark {
+  /* Seinagro Color Palette - Dark */
+  --brand-forest: #3FA66A;
+  --brand-growth: #5CC45A;
+  --brand-harvest: #FF9A3D;
+  --brand-harvest-ink: #FFB066;
+  --brand-wheat: #EAA546;
+  --earth-soil: #E8DCCB;
+  --earth-clay: #C79B7A;
+  --surface-cream: #0B1A12;
+  --surface-card: #12281C;
+  --ink: #EEF3EC;
+  --sky-mist: #99B5CB;
+
+  /* shadcn base token remapping - Dark */
+  --background: var(--surface-cream);
+  --foreground: var(--ink);
+  --card: var(--surface-card);
+  --card-foreground: var(--ink);
+  --popover: var(--surface-card);
+  --popover-foreground: var(--ink);
+
+  --primary: var(--brand-forest);
+  --primary-foreground: #0B1A12;
+
+  --secondary: #173324;
+  --secondary-foreground: var(--ink);
+
+  --muted: #173324;
+  --muted-foreground: #9BB3A5;
+
+  --accent: var(--brand-harvest);
+  --accent-foreground: #0B1A12;
+
+  --destructive: #EF5350;
+  --destructive-foreground: #FFFFFF;
+
+  --border: rgba(255, 255, 255, 0.12);
+  --input: rgba(255, 255, 255, 0.16);
+  --ring: var(--brand-forest);
+
+  --sidebar: var(--surface-card);
+  --sidebar-foreground: var(--ink);
+  --sidebar-primary: var(--brand-forest);
+  --sidebar-primary-foreground: #0B1A12;
+  --sidebar-accent: #173324;
+  --sidebar-accent-foreground: var(--ink);
+  --sidebar-border: rgba(255, 255, 255, 0.12);
+  --sidebar-ring: var(--brand-forest);
+}
+
+@theme inline {
+  --animate-scroll: scroll var(--animation-duration, 40s)
+    var(--animation-direction, forwards) linear infinite;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-ibm-plex-sans), system-ui, sans-serif;
+  --font-arabic: var(--font-ibm-plex-sans-arabic), system-ui, sans-serif;
+
+  /* Brand Palette Tokens */
+  --color-forest: var(--brand-forest);
+  --color-growth: var(--brand-growth);
+  --color-harvest: var(--brand-harvest);
+  --color-harvest-ink: var(--brand-harvest-ink);
+  --color-wheat: var(--brand-wheat);
+  --color-soil: var(--earth-soil);
+  --color-clay: var(--earth-clay);
+  --color-cream: var(--surface-cream);
+  --color-mist: var(--sky-mist);
+  --color-ink: var(--ink);
+
+  /* shadcn UI tokens */
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  [dir="rtl"] {
+    line-height: 1.8;
+  }
+
+  [dir="rtl"] h1,
+  [dir="rtl"] h2,
+  [dir="rtl"] h3,
+  [dir="rtl"] h4 {
+    line-height: 1.4;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-semibold text-foreground;
+  }
+
+  .common-padding {
+    @apply px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24;
+  }
+}

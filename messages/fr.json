@@ -1,0 +1,199 @@
+{
+  "Meta": {
+    "title": "Seinagro | Semences de Cultures Stratégiques & Engrais Avancés",
+    "description": "Seinagro est spécialisée dans la production de semences certifiées résilientes au climat et la distribution d'engrais simples, composés et organiques spécialisés.",
+    "ogTitle": "Seinagro | Semences de Cultures Stratégiques & Engrais Avancés",
+    "ogDescription": "Promouvoir une agriculture durable en Égypte, en Afrique, dans le monde arabe et sur les marchés mondiaux grâce à des semences certifiées et des engrais de haute performance."
+  },
+  "Nav": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "offerings": "Nos Pôles",
+    "vision": "Vision & Mission",
+    "objectives": "Objectifs Stratégiques",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "badge": "Pionnier de l'Innovation Agricole",
+    "title": "Renforcer l'Agriculture Mondiale par l'Excellence Scientifique et de Terrain",
+    "subtitle": "Seinagro produit des semences certifiées de cultures stratégiques résilientes au changement climatique et distribue des engrais simples, composés et organiques spécialisés pour l'exportation régionale et mondiale.",
+    "exploreCta": "Découvrir Nos Produits",
+    "partnerCta": "Devenir Partenaire",
+    "regions": {
+      "egypt": "Égypte",
+      "africa": "Continent Africain",
+      "arab": "Région Arabe",
+      "asia": "Asie & Marchés Internationaux"
+    }
+  },
+  "Legacy": {
+    "sectionBadge": "Héritage Institutionnel",
+    "title": "Une Direction Exécutive Multinationale",
+    "narrative": "Seinagro est une entreprise agricole moderne s'appuyant sur des fondateurs cumulant des décennies de haute direction exécutive au sein de multinationales agricoles de premier plan en Égypte, en Afrique et en Asie. Notre socle institutionnel associe une recherche agronomique de pointe à une solide maîtrise opérationnelle de terrain pour soutenir la sécurité alimentaire et la résilience agricole durable.",
+    "cards": {
+      "egypt": {
+        "title": "Égypte",
+        "role": "Socle Agricole & Rayonnement National",
+        "description": "Des décennies de contribution active aux grands projets nationaux de mise en valeur agricole et à la gestion de réseaux d'approvisionnement à travers les gouvernorats égyptiens."
+      },
+      "africa": {
+        "title": "Afrique",
+        "role": "Exportation Continentale & Transfert Technologique",
+        "description": "Un leadership éprouvé dans l'adaptation de semences résilientes au stress climatique et la formulation d'engrais adaptés aux spécificités des sols et climats africains."
+      },
+      "asia": {
+        "title": "Asie & Monde",
+        "role": "Partenariats Mondiaux & R&D Avancée",
+        "description": "Alliances stratégiques avec les leaders mondiaux de l'agro-technologie pour stimuler le transfert de connaissances et l'adoption des standards internationaux."
+      }
+    }
+  },
+  "Offerings": {
+    "sectionBadge": "Pôles d'Excellence",
+    "title": "Solutions Agricoles Intégrées",
+    "subtitle": "Conçues pour la résilience climatique, une productivité maximale et la préservation de la vitalité des sols.",
+    "seeds": {
+      "badge": "Semences Certifiées Haut Rendement",
+      "title": "Semences Certifiées de Cultures Stratégiques",
+      "description": "Production et développement de semences exclusives et certifiées de cultures stratégiques à haut potentiel de rendement, sélectionnées pour leur résistance aux stress climatiques et aux maladies.",
+      "climateResilience": "Sélection génétique rigoureuse garantissant une tolérance accrue à la sécheresse, une efficience hydrique et un taux de germination supérieur.",
+      "items": {
+        "1": "Variétés et hybrides simples et triples exclusifs à la société",
+        "2": "Pureté génétique certifiée par des contrôles rigoureux en laboratoire",
+        "3": "Parfaite adaptation aux sols arides et résistance aux températures élevées",
+        "4": "Assistance agronomique complète et encadrement technique sur le terrain"
+      }
+    },
+    "fertilizers": {
+      "badge": "Nutrition Végétale Avancée",
+      "title": "Engrais Simples, Composés et Organiques Spécialisés",
+      "description": "Négoce et distribution d'une gamme complète d'engrais minéraux simples, d'engrais composés NPK et d'engrais organiques spécialisés pour maximiser l'efficience nutritive.",
+      "climateResilience": "Formulations protectrices restaurant la fertilité des sols face aux perturbations climatiques.",
+      "items": {
+        "1": "Engrais simples de haute pureté et concentration (azote, phosphore, potassium)",
+        "2": "Formules composées NPK équilibrées répondant aux besoins précis des cultures",
+        "3": "Solutions organiques et biologiques spécialisées régénérant la matière organique",
+        "4": "Optimisation maximale de l'absorption et impact écologique durable"
+      }
+    }
+  },
+  "VisionMission": {
+    "sectionBadge": "Principes Directeurs",
+    "title": "Vision & Mission",
+    "vision": {
+      "label": "Notre Vision",
+      "statement": "Être parmi les pionniers de l'industrie de production de semences et d'engrais en Égypte et dans la région grâce à l'investissement dans la créativité et l'innovation agricoles."
+    },
+    "mission": {
+      "label": "Notre Mission",
+      "statement": "Mobiliser l'expertise locale et internationale des fondateurs de Seinagro dans le secteur agricole pour offrir des produits de haute qualité."
+    }
+  },
+  "Objectives": {
+    "sectionBadge": "Orientation Stratégique",
+    "title": "5 Objectifs Stratégiques",
+    "subtitle": "Notre feuille de route institutionnelle pour une croissance durable, un leadership scientifique et un impact régional fort.",
+    "pillars": {
+      "1": {
+        "title": "R&D Résiliente au Changement Climatique",
+        "description": "Développer et produire des variétés de semences exclusives à haut rendement, ainsi que des engrais simples et organiques conçus pour renforcer la résilience face au changement climatique."
+      },
+      "2": {
+        "title": "Exigence Qualité Sans Compromis",
+        "description": "Respecter des normes de qualité strictes sur l'ensemble des produits et processus opérationnels afin d'établir une confiance durable avec les agriculteurs et partenaires B2B."
+      },
+      "3": {
+        "title": "Expansion Régionale et Mondiale",
+        "description": "Consolider les parts de marché en Égypte tout en menant une expansion ciblée et méthodique sur les marchés africains, arabes et internationaux."
+      },
+      "4": {
+        "title": "Capital Humain Scientifique et de Terrain",
+        "description": "Investir dans le développement d'une équipe d'élite alliant les plus hautes qualifications scientifiques à une expérience pratique approfondie sur le terrain."
+      },
+      "5": {
+        "title": "Transfert Technologique Mondial",
+        "description": "Mettre à profit l'expérience multinationale des fondateurs pour adopter et adapter les technologies mondiales les plus avancées dans la production et la commercialisation des semences."
+      }
+    }
+  },
+  "Contact": {
+    "sectionBadge": "Demandes d'Exportation",
+    "title": "Exportation & Partenariat Commercial",
+    "subtitle": "Échangez directement avec notre direction du commerce international et nos experts agronomiques.",
+    "hq": {
+      "title": "Siège Officiel",
+      "country": "République Arabe d'Égypte",
+      "city": "Ville de Noubaria",
+      "address": "Ville de Noubaria, République Arabe d'Égypte",
+      "phone": "+20 11 2222 8970",
+      "email": "info@seinagro.com",
+      "hours": "Dimanche – Jeudi: 9h00 – 17h00 (Heure du Caire)"
+    },
+    "form": {
+      "nameLabel": "Nom Complet",
+      "namePlaceholder": "Votre nom et prénom",
+      "companyLabel": "Entreprise / Organisation",
+      "companyPlaceholder": "Nom de votre société",
+      "countryLabel": "Pays",
+      "countryPlaceholder": "Votre pays de résidence",
+      "emailLabel": "Email Professionnel",
+      "emailPlaceholder": "contact@entreprise.com",
+      "inquiryTypeLabel": "Type de Demande",
+      "inquiryTypePlaceholder": "Sélectionnez le type de demande",
+      "types": {
+        "seeds": "Semences Certifiées de Cultures Stratégiques",
+        "fertilizers": "Engrais & Nutrition des Plantes",
+        "partnership": "Partenariat Commercial / Distribution",
+        "other": "Demande Générale / Autre"
+      },
+      "messageLabel": "Détails de la Demande",
+      "messagePlaceholder": "Précisez vos besoins, spécifications de cultures ou volumes souhaités pour l'export...",
+      "submit": "Envoyer la Demande d'Exportation",
+      "submitting": "Envoi en cours...",
+      "successTitle": "Demande Envoyée avec Succès",
+      "successMessage": "Merci de nous avoir contactés. Notre équipe commerciale internationale vous répondra dans les plus brefs délais.",
+      "errorTitle": "Erreur d'Envoi",
+      "errorMessage": "Une erreur est survenue lors de l'envoi. Veuillez réessayer ou nous contacter directement à info@seinagro.com."
+    },
+    "validation": {
+      "nameRequired": "Le nom complet est requis",
+      "companyRequired": "Le nom de l'entreprise est requis",
+      "countryRequired": "Le pays est requis",
+      "emailInvalid": "Veuillez renseigner une adresse email professionnelle valide",
+      "inquiryTypeRequired": "Veuillez sélectionner un type de demande",
+      "messageMin": "Le message doit contenir au moins 10 caractères"
+    }
+  },
+  "Footer": {
+    "companyName": "Seinagro",
+    "tagline": "Pionnier de l'innovation des semences et engrais en Égypte et sur les marchés mondiaux.",
+    "copyright": "© Seinagro. Tous droits réservés.",
+    "headquartersLabel": "Siège",
+    "headquartersValue": "Ville de Noubaria, République Arabe d'Égypte",
+    "phoneLabel": "Téléphone",
+    "phoneValue": "+20 11 2222 8970",
+    "emailLabel": "Email",
+    "emailValue": "info@seinagro.com",
+    "quickLinks": "Liens Rapides",
+    "pillarsLabel": "Pôles Stratégiques"
+  },
+  "NotFound": {
+    "title": "Page Non Trouvée",
+    "description": "La page que vous recherchez n'existe pas ou a été déplacée.",
+    "homeCta": "Retour à l'Accueil"
+  },
+  "Dark": {
+    "light": "Clair",
+    "dark": "Sombre",
+    "system": "Système",
+    "sr": "Changer de thème"
+  },
+  "NavLinks": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "departments": "Départements",
+    "products": "Produits",
+    "clients": "Clients",
+    "contact": "Contact"
+  }
+}

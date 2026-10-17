@@ -1,0 +1,199 @@
+{
+  "Meta": {
+    "title": "Seinagro | Strategic Crop Seeds & Advanced Fertilizers",
+    "description": "Seinagro specializes in certified, climate-resilient strategic crop seeds and high-performance straight, compound, and specialized organic fertilizers.",
+    "ogTitle": "Seinagro | Strategic Crop Seeds & Advanced Fertilizers",
+    "ogDescription": "Empowering sustainable agriculture across Egypt, Africa, the Arab Region, and global markets with certified high-yielding seeds and advanced fertilizers."
+  },
+  "Nav": {
+    "home": "Home",
+    "about": "About",
+    "offerings": "Offerings",
+    "vision": "Vision & Mission",
+    "objectives": "Strategic Objectives",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "badge": "Pioneering Agricultural Innovation",
+    "title": "Empowering Global Agriculture Through Science & Field Excellence",
+    "subtitle": "Seinagro produces certified, climate-resilient strategic crop seeds and distributes high-performance straight, compound, and specialized organic fertilizers for regional and global export.",
+    "exploreCta": "Explore Offerings",
+    "partnerCta": "Partner With Us",
+    "regions": {
+      "egypt": "Egypt",
+      "africa": "African Continent",
+      "arab": "Arab Region",
+      "asia": "Asian & Global Markets"
+    }
+  },
+  "Legacy": {
+    "sectionBadge": "Institutional Heritage",
+    "title": "Executive Leadership Across Continents",
+    "narrative": "Seinagro is a modern agricultural enterprise backed by founders with decades of senior executive leadership across multinational corporations in Egypt, Africa, and Asia. Our institutional foundation unites world-class scientific research with hands-on agronomic field mastery to deliver sustainable food security and agricultural resilience.",
+    "cards": {
+      "egypt": {
+        "title": "Egypt",
+        "role": "Agricultural Foundation & National Impact",
+        "description": "Decades of active contribution to mega agricultural reclamation projects and nationwide distribution networks across Egyptian governorates."
+      },
+      "africa": {
+        "title": "Africa",
+        "role": "Continental Export & Tech Transfer",
+        "description": "Extensive multinational leadership in deploying climate-resilient seed strains and customized fertility solutions tailored for diverse African soil and climates."
+      },
+      "asia": {
+        "title": "Asia & Global",
+        "role": "Global Partnerships & Advanced R&D",
+        "description": "Strategic collaboration with premier agricultural technology providers, pioneering cross-border agronomic knowledge transfer and global trade."
+      }
+    }
+  },
+  "Offerings": {
+    "sectionBadge": "Core Business Pillars",
+    "title": "Integrated Agricultural Solutions",
+    "subtitle": "Engineered for climate resilience, maximum productivity, and sustainable soil vitality.",
+    "seeds": {
+      "badge": "Certified High-Yield",
+      "title": "Certified Strategic Crop Seeds",
+      "description": "Production and development of certified, exclusive, high-yielding strategic crop seeds bred specifically for climate-change resilience and disease tolerance.",
+      "climateResilience": "Bred for extreme climate tolerance, water efficiency, and verified germination vitality.",
+      "items": {
+        "1": "Proprietary single & triple cross hybrid varieties",
+        "2": "Superior genetic purity and rigorous laboratory certification",
+        "3": "Optimized for drought, heat, and variable soil conditions",
+        "4": "End-to-end technical field supervision and agronomic support"
+      }
+    },
+    "fertilizers": {
+      "badge": "Advanced Plant Nutrition",
+      "title": "Straight, Compound & Specialized Organic Fertilizers",
+      "description": "Trading and distribution of premium straight, compound, and specialized organic fertilizers formulated to enhance soil biology and maximize nutrient efficiency.",
+      "climateResilience": "Advanced soil conditioning formulas designed to sustain fertility against climatic stress.",
+      "items": {
+        "1": "High-purity straight fertilizers (nitrogen, phosphorus, potassium)",
+        "2": "Balanced NPK compound formulas customized for strategic crops",
+        "3": "Bio-active specialized organic formulations that restore soil vitality",
+        "4": "Enhanced nutrient uptake and eco-friendly sustainable footprint"
+      }
+    }
+  },
+  "VisionMission": {
+    "sectionBadge": "Guiding Principles",
+    "title": "Vision & Mission",
+    "vision": {
+      "label": "Our Vision",
+      "statement": "To be among the pioneers in the seed and fertilizer production industry in Egypt and the region through investing in agricultural creativity and innovation."
+    },
+    "mission": {
+      "label": "Our Mission",
+      "statement": "To leverage the local and international expertise of Seinagro’s founders in the agricultural sector to deliver high-quality products."
+    }
+  },
+  "Objectives": {
+    "sectionBadge": "Strategic Direction",
+    "title": "5 Strategic Objectives",
+    "subtitle": "Our institutional roadmap for sustainable growth, scientific leadership, and regional impact.",
+    "pillars": {
+      "1": {
+        "title": "Climate-Resilient R&D",
+        "description": "Develop and produce exclusive high-yielding seed varieties, plus straight and organic fertilizers designed to build resilience against climate change."
+      },
+      "2": {
+        "title": "Uncompromising Quality",
+        "description": "Uphold strict quality standards across all products and operational processes to earn the enduring trust of farmers and B2B partners."
+      },
+      "3": {
+        "title": "Regional & Global Expansion",
+        "description": "Strengthen market share in Egypt while executing targeted expansion across African, Arab, and global markets."
+      },
+      "4": {
+        "title": "Scientific & Field Human Capital",
+        "description": "Invest in an elite workforce blending top scientific qualifications with practical field experience."
+      },
+      "5": {
+        "title": "Global Tech Transfer",
+        "description": "Leverage founders' multinational experience to adopt the latest global technologies in seed production and marketing."
+      }
+    }
+  },
+  "Contact": {
+    "sectionBadge": "Global Inquiries",
+    "title": "Export Inquiry & Partnership",
+    "subtitle": "Connect directly with our international export and agronomic team.",
+    "hq": {
+      "title": "Official Headquarters",
+      "country": "Arab Republic of Egypt",
+      "city": "Nubaria City",
+      "address": "Nubaria City, Arab Republic of Egypt",
+      "phone": "+20 11 2222 8970",
+      "email": "info@seinagro.com",
+      "hours": "Sunday – Thursday: 9:00 AM – 5:00 PM (Cairo Time)"
+    },
+    "form": {
+      "nameLabel": "Full Name",
+      "namePlaceholder": "Enter your full name",
+      "companyLabel": "Company Name",
+      "companyPlaceholder": "Enter your company name",
+      "countryLabel": "Country",
+      "countryPlaceholder": "Select or enter your country",
+      "emailLabel": "Business Email",
+      "emailPlaceholder": "name@company.com",
+      "inquiryTypeLabel": "Inquiry Type",
+      "inquiryTypePlaceholder": "Select inquiry type",
+      "types": {
+        "seeds": "Certified Strategic Crop Seeds",
+        "fertilizers": "Fertilizers & Soil Nutrition",
+        "partnership": "Commercial Partnership / Distribution",
+        "other": "General / Other Inquiry"
+      },
+      "messageLabel": "Inquiry Details",
+      "messagePlaceholder": "Describe your requirements, crop specifications, or export quantities...",
+      "submit": "Submit Export Inquiry",
+      "submitting": "Submitting Inquiry...",
+      "successTitle": "Inquiry Submitted Successfully",
+      "successMessage": "Thank you for reaching out. Our international trade team will contact you shortly.",
+      "errorTitle": "Submission Error",
+      "errorMessage": "Failed to send inquiry. Please try again or email us directly at info@seinagro.com."
+    },
+    "validation": {
+      "nameRequired": "Full name is required",
+      "companyRequired": "Company name is required",
+      "countryRequired": "Country is required",
+      "emailInvalid": "Please enter a valid business email address",
+      "inquiryTypeRequired": "Please select an inquiry type",
+      "messageMin": "Message must be at least 10 characters"
+    }
+  },
+  "Footer": {
+    "companyName": "Seinagro",
+    "tagline": "Pioneering seed and fertilizer innovation across Egypt and international markets.",
+    "copyright": "© Seinagro. All rights reserved.",
+    "headquartersLabel": "Headquarters",
+    "headquartersValue": "Nubaria City, Arab Republic of Egypt",
+    "phoneLabel": "Phone",
+    "phoneValue": "+20 11 2222 8970",
+    "emailLabel": "Email",
+    "emailValue": "info@seinagro.com",
+    "quickLinks": "Quick Links",
+    "pillarsLabel": "Core Pillars"
+  },
+  "NotFound": {
+    "title": "Page Not Found",
+    "description": "The page you are looking for does not exist or has been moved.",
+    "homeCta": "Return to Home"
+  },
+  "Dark": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "sr": "Toggle theme"
+  },
+  "NavLinks": {
+    "home": "Home",
+    "about": "About",
+    "departments": "Departments",
+    "products": "Products",
+    "clients": "Clients",
+    "contact": "Contact Us"
+  }
+}
