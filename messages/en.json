@@ -126,8 +126,11 @@
       "city": "Nubaria City",
       "address": "Nubaria City, Arab Republic of Egypt",
       "phone": "+20 11 2222 8970",
+      "phoneLabel": "Phone",
       "email": "info@seinagro.com",
-      "hours": "Sunday – Thursday: 9:00 AM – 5:00 PM (Cairo Time)"
+      "emailLabel": "Email",
+      "hours": "Sunday – Thursday: 9:00 AM – 5:00 PM (Cairo Time)",
+      "hoursLabel": "Business Hours"
     },
     "form": {
       "nameLabel": "Full Name",
@@ -195,5 +198,116 @@
     "products": "Products",
     "clients": "Clients",
     "contact": "Contact Us"
+  },
+  "aboutPage": {
+    "meta": {
+      "title": "About Seinagro | Agricultural Innovation & Multinational Heritage",
+      "description": "Discover Seinagro's institutional journey, multinational executive leadership across Egypt, Africa, and Asia, and commitment to certified strategic seeds and advanced plant nutrition."
+    },
+    "hero": {
+      "badge": "About Seinagro",
+      "title": "A Legacy of Executive Leadership & Scientific Mastery",
+      "subtitle": "Uniting decades of multinational agro-industry experience with field-proven agricultural innovation across Egypt, the African continent, and global markets."
+    },
+    "legacy": {
+      "badge": "Multinational Heritage",
+      "title": "Decades of Leadership Across Egypt, Africa & Asia",
+      "lead": "Seinagro represents the culmination of decades of senior executive leadership at the helm of top multinational agricultural corporations.",
+      "p1": "Our leadership team has guided major agricultural development, strategic crop programs, and international agrochemical distribution across diverse territories—from mega-scale reclamation ventures in the Egyptian desert to continental crop productivity initiatives in Sub-Saharan Africa and high-tech supply partnerships in Asia.",
+      "p2": "Rather than relying on generic corporate claims, Seinagro's competitive foundation is built on institutional credibility, verified field results, and long-standing trust with farming communities and international agribusiness partners.",
+      "regions": {
+        "egypt": {
+          "title": "Egypt: Operational Heartland",
+          "description": "Direct involvement in national food security mega-projects, desert agriculture reclamation, and extensive seed distribution networks across the Nile Valley and reclaimed lands."
+        },
+        "africa": {
+          "title": "African Continent: Scaled Export & Climate Adaptation",
+          "description": "Pioneering the introduction of climate-resilient seed genetics and customized soil fertility programs tailored to tropical, arid, and variable agro-ecological zones across Africa."
+        },
+        "asia": {
+          "title": "Asia & Global: Innovation & Tech Transfer",
+          "description": "Forging strategic alliances with world-class plant breeding centers, advanced biotechnology providers, and global trade corridors."
+        }
+      }
+    },
+    "humanCapital": {
+      "badge": "Human Capital & Field Mastery",
+      "title": "Elite Agronomists & Scientific Field Expertise",
+      "lead": "Agricultural transformation happens where scientific laboratory rigor meets everyday soil reality.",
+      "p1": "At Seinagro, we invest systematically in an elite multidisciplinary team of senior agronomists, plant breeders, soil nutritionists, and technical field advisors. Our specialists work directly side-by-side with commercial growers and smallholder farmers throughout the full crop life cycle.",
+      "p2": "From precision seedbed preparation and germination trials to synchronized fertilization schedules and pest resilience monitoring, our technical team provides continuous agronomic supervision to ensure optimal yield potential and return on investment.",
+      "features": {
+        "1": "Hands-on field agronomists stationed across production zones",
+        "2": "Rigorous on-farm demonstration plots and real-world trial validation",
+        "3": "Continuous farmer training and scientific technical advisories",
+        "4": "Rapid diagnostic response for soil health and crop stress management"
+      }
+    },
+    "visionMission": {
+      "badge": "Strategic Foundations",
+      "title": "Our Purpose & Long-Term Commitment",
+      "vision": {
+        "title": "Our Vision",
+        "statement": "To be among the pioneers in the seed and fertilizer production industry in Egypt and the region through investing in agricultural creativity and innovation.",
+        "description": "We envision an agricultural future where every grower has access to high-yielding, climate-resilient inputs that protect biodiversity, optimize water usage, and safeguard long-term food sovereignty."
+      },
+      "mission": {
+        "title": "Our Mission",
+        "statement": "To leverage the local and international expertise of Seinagro’s founders in the agricultural sector to deliver high-quality products.",
+        "description": "We channel decades of multinational expertise directly into the hands of farmers by providing certified seed genetics and premium soil nutrition that consistently outperform under changing climatic conditions."
+      }
+    },
+    "objectives": {
+      "badge": "Roadmap for Growth",
+      "title": "5 Strategic Objectives Deep-Dive",
+      "subtitle": "Structured pillars guiding Seinagro's research, manufacturing, expansion, and talent development.",
+      "pillars": {
+        "1": {
+          "title": "1. Climate-Resilient R&D",
+          "description": "Developing and producing exclusive high-yielding seed varieties, plus straight and organic fertilizers designed to build resilience against climate change.",
+          "detail": "Investing in climate-smart breeding and advanced organic soil conditioners that withstand severe drought, soil salinity, and heat waves while maximizing yield output."
+        },
+        "2": {
+          "title": "2. Uncompromising Quality Standards",
+          "description": "Upholding strict quality standards across all products and operational processes to earn the enduring trust of farmers and B2B partners.",
+          "detail": "Enforcing stringent laboratory germination protocols, genetic purity certifications, and chemical purity standards on every seed batch and fertilizer formulation."
+        },
+        "3": {
+          "title": "3. Regional & Continental Expansion",
+          "description": "Strengthening market share in Egypt while executing targeted expansion across African, Arab, and global markets.",
+          "detail": "Establishing robust B2B export pipelines, commercial distribution partnerships, and localized technical support in key agricultural growth corridors."
+        },
+        "4": {
+          "title": "4. Scientific & Field Human Capital",
+          "description": "Investing in an elite workforce blending top scientific qualifications with practical field experience.",
+          "detail": "Cultivating top agronomic talent through continuous technical upskilling, university partnerships, and dedicated field supervisory teams."
+        },
+        "5": {
+          "title": "5. Global Technology Transfer",
+          "description": "Leveraging founders' multinational experience to adopt the latest global technologies in seed production and marketing.",
+          "detail": "Accelerating the adoption of modern hybrid seed technology, bio-organic fertilization formulations, and digital agronomic monitoring across our markets."
+        }
+      }
+    },
+    "images": {
+      "field1": "Vast green certified maize field under clear skies showcasing crop vigor",
+      "field2": "High-capacity combine harvesters harvesting golden wheat across expansive agricultural horizon",
+      "field3": "Senior agronomist standing in a ripe wheat field conducting pre-harvest agronomic inspection",
+      "field4": "Hands of an agronomist examining healthy, well-developed fava bean pods on the vine",
+      "field5": "Elevated view of flourishing agricultural crops and rural horizon reflecting sustainable growth",
+      "plant1": "Fava bean plant with prolific pod sets nourished by modern drip irrigation and balanced fertilizers",
+      "plant2": "Vertical view of a vigorous fava bean plant demonstrating exceptional vegetative growth and pod load",
+      "plant3": "Greenhouse cucumber vines bearing premium fruit and blossoms under controlled environmental R&D",
+      "plant4": "Looking through a dense, thriving green maize canopy highlighting high genetic productivity",
+      "plant5": "Detailed close-up of healthy fava bean pods displaying genetic purity and disease resistance",
+      "plant6": "Prolific broad bean plant in full bloom and early pod set exemplifying high yield potential"
+    },
+    "cta": {
+      "badge": "Strategic Agricultural Partnerships",
+      "title": "Ready to Transform Your Crop Yields & Soil Potential?",
+      "subtitle": "Partner directly with Seinagro to access certified climate-resilient crop seeds and precision fertilizers backed by multinational agronomic leadership.",
+      "partnerButton": "Partner With Us",
+      "exploreButton": "Explore Offerings"
+    }
   }
 }

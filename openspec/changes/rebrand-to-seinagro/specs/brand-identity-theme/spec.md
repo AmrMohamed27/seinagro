@@ -5,7 +5,7 @@ Defines the Seinagro visual identity: standardized naming, logo and hero asset u
 ## ADDED Requirements
 
 ### Requirement: Standardized company name
-The site SHALL present the company as "Seinagro" in English and French and "سيناغرو" in Arabic in every visible string, page title, metadata field, footer, and outgoing email. The legacy brand names and the misspelling "Sinagro" MUST NOT appear anywhere in source or content.
+The site SHALL present the company as "Seinagro" in English and French and "سيناجرو" in Arabic in every visible string, page title, metadata field, footer, and outgoing email. The legacy brand names and the misspelling "Sinagro" MUST NOT appear anywhere in source or content.
 
 #### Scenario: No legacy brand strings
 - **WHEN** the repository source and all message files are searched case-insensitively for "shahbandar", "الشهبندر", "شهبندر" and "sinagro"
@@ -13,7 +13,7 @@ The site SHALL present the company as "Seinagro" in English and French and "سي
 
 #### Scenario: Name per locale
 - **WHEN** a page is rendered in `ar`, `en` or `fr`
-- **THEN** the company name appears as "سيناغرو", "Seinagro" and "Seinagro" respectively
+- **THEN** the company name appears as "سيناجرو", "Seinagro" and "Seinagro" respectively
 
 ### Requirement: Official brand assets
 The site SHALL use only the provided assets in `public/assets/images/` for logo and hero imagery, and MUST NOT reference missing files.

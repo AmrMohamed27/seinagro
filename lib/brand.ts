@@ -13,8 +13,16 @@ export const BRAND_ASSETS = {
     },
   },
   hero: {
-    primary: "/assets/images/hero-1.jpg",
-    ogImage: "/assets/images/hero-3.jpg",
+    primary: {
+      ar: "/assets/images/hero-3.jpg",
+      en: "/assets/images/hero-2.jpg",
+      fr: "/assets/images/hero-2.jpg",
+    },
+    ogImage: {
+      ar: "/assets/images/hero-3.jpg",
+      en: "/assets/images/hero-2.jpg",
+      fr: "/assets/images/hero-2.jpg",
+    },
     preview: "/assets/images/hero-2.jpg",
   },
 } as const;
@@ -23,7 +31,7 @@ export const COMPANY_INFO = {
   name: {
     en: "Seinagro",
     fr: "Seinagro",
-    ar: "سيناغرو",
+    ar: "سيناجرو",
   },
   domain: "https://www.seinagro.com",
   canonicalUrl: "https://www.seinagro.com",
@@ -41,4 +49,18 @@ export function getWordmark(locale: string): string {
     return BRAND_ASSETS.logo.wordmark.ar;
   }
   return BRAND_ASSETS.logo.wordmark.en;
+}
+
+export function getHeroImage(locale: string): string {
+  if (locale === "ar") {
+    return BRAND_ASSETS.hero.primary.ar;
+  }
+  return BRAND_ASSETS.hero.primary.en;
+}
+
+export function getOgImage(locale: string): string {
+  if (locale === "ar") {
+    return BRAND_ASSETS.hero.ogImage.ar;
+  }
+  return BRAND_ASSETS.hero.ogImage.en;
 }

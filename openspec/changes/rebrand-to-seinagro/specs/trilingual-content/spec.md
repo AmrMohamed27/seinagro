@@ -52,7 +52,7 @@ Each locale SHALL expose a localized title, description, Open Graph data, canoni
 
 #### Scenario: Metadata per locale
 - **WHEN** page head is inspected for each locale
-- **THEN** title and description are in that locale and contain "Seinagro"/"سيناغرو"
+- **THEN** title and description are in that locale and contain "Seinagro"/"سيناجرو"
 
 #### Scenario: Hreflang alternates
 - **WHEN** the head is inspected

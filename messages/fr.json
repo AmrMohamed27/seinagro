@@ -126,8 +126,11 @@
       "city": "Ville de Noubaria",
       "address": "Ville de Noubaria, République Arabe d'Égypte",
       "phone": "+20 11 2222 8970",
+      "phoneLabel": "Téléphone",
       "email": "info@seinagro.com",
-      "hours": "Dimanche – Jeudi: 9h00 – 17h00 (Heure du Caire)"
+      "emailLabel": "Email",
+      "hours": "Dimanche – Jeudi: 9h00 – 17h00 (Heure du Caire)",
+      "hoursLabel": "Horaires d'Ouverture"
     },
     "form": {
       "nameLabel": "Nom Complet",
@@ -195,5 +198,116 @@
     "products": "Produits",
     "clients": "Clients",
     "contact": "Contact"
+  },
+  "aboutPage": {
+    "meta": {
+      "title": "À Propos de Seinagro | Innovation Agricole & Héritage Multinational",
+      "description": "Découvrez le parcours institutionnel de Seinagro, la direction exécutive multinationale de ses fondateurs en Égypte, en Afrique et en Asie, et son engagement pour les semences certifiées et la nutrition végétale avancée."
+    },
+    "hero": {
+      "badge": "À Propos de Seinagro",
+      "title": "Un Héritage de Direction Exécutive & de Maîtrise Scientifique de Terrain",
+      "subtitle": "Alliant des décennies d'expérience de haute direction au sein de multinationales agro-industrielles à l'innovation agricole appliquée en Égypte, en Afrique et sur les marchés mondiaux."
+    },
+    "legacy": {
+      "badge": "Héritage Multinational",
+      "title": "Des Décennies de Leadership en Égypte, en Afrique et en Asie",
+      "lead": "Seinagro représente l'aboutissement de décennies de haute direction exécutive au sein des plus grandes multinationales du secteur agricole.",
+      "p1": "Nos dirigeants ont piloté des programmes de développement agricole d'envergure, des stratégies d'amélioration variétale de cultures stratégiques et la distribution internationale d'intrants agrochimiques dans des zones variées — des méga-projets de mise en valeur dans le désert égyptien aux plans continentaux de productivité en Afrique subsaharienne, jusqu'aux partenariats technologiques de pointe en Asie.",
+      "p2": "Loin des simples déclarations d'intention, la force concurrentielle de Seinagro repose sur une crédibilité institutionnelle reconnue, des rendements agricoles vérifiés sur le terrain et des relations de confiance durables avec les producteurs et les partenaires agro-industriels internationaux.",
+      "regions": {
+        "egypt": {
+          "title": "Égypte : Cœur Opérationnel & Ancrage Historique",
+          "description": "Implication directe dans les méga-projets nationaux de sécurité alimentaire, la bonification agricole des terres désertiques et la gestion de réseaux d'approvisionnement en semences à travers tout le territoire égyptien."
+        },
+        "africa": {
+          "title": "Continent Africain : Exportation Stratégique & Adaptation Climatique",
+          "description": "Pionnier dans l'introduction de génétiques semencières résilientes aux stress climatiques et de programmes de fertilisation sur mesure adaptés à la diversité des sols et des climats africains."
+        },
+        "asia": {
+          "title": "Asie & Monde : Alliances d'Innovation & Transfert Technologique",
+          "description": "Nouement de partenariats stratégiques avec les centres d'excellence mondiaux en amélioration variétale, les biotechnologies de pointe et les couloirs d'échange internationaux."
+        }
+      }
+    },
+    "humanCapital": {
+      "badge": "Capital Humain & Expertise de Terrain",
+      "title": "Agronomes d'Élite & Savoir-Faire Scientifique Appliqué",
+      "lead": "La véritable transformation agricole s'opère lorsque la rigueur du laboratoire rencontre la réalité vivante du sol.",
+      "p1": "Chez Seinagro, nous investissons systématiquement dans une équipe pluridisciplinaire d'élite réunissant agronomes seniors, sélectionneurs de semences, spécialistes de la fertilité des sols et conseillers techniques de terrain. Nos experts travaillent côte à côte avec les exploitants agricoles tout au long du cycle cultural.",
+      "p2": "De la préparation méticuleuse du lit de semence et des tests de vigueur germinative jusqu'aux calendriers de fertilisation équilibrés et à la surveillance de la résistance aux aléas climatiques, notre équipe technique assure une supervision agronomique continue pour maximiser le potentiel de rendement et la rentabilité des exploitations.",
+      "features": {
+        "1": "Agronomes de terrain hautement qualifiés déployés au plus près des zones de culture",
+        "2": "Parcelles de démonstration et essais comparatifs en conditions réelles d'exploitation",
+        "3": "Formation continue des producteurs et accompagnement technique personnalisé",
+        "4": "Capacité de diagnostic rapide de la santé des sols et de gestion du stress végétal"
+      }
+    },
+    "visionMission": {
+      "badge": "Fondements Stratégiques",
+      "title": "Notre Vocation & Notre Engagement Durable",
+      "vision": {
+        "title": "Notre Vision",
+        "statement": "Être parmi les pionniers de l'industrie de production de semences et d'engrais en Égypte et dans la région grâce à l'investissement dans la créativité et l'innovation agricoles.",
+        "description": "Nous aspirons à un avenir agricole où chaque producteur dispose d'intrants certifiés et résilients au climat, optimisant l'usage de l'eau, préservant la biodiversité et renforçant la souveraineté alimentaire durable."
+      },
+      "mission": {
+        "title": "Notre Mission",
+        "statement": "Mobiliser l'expertise locale et internationale des fondateurs de Seinagro dans le secteur agricole pour fournir des produits de haute qualité.",
+        "description": "Nous mettons des décennies de savoir-faire multinational au service direct des agriculteurs, en fournissant des semences sélectionnées et des solutions nutritives supérieures qui font leurs preuves face aux aléas environnementaux."
+      }
+    },
+    "objectives": {
+      "badge": "Feuille de Route",
+      "title": "5 Objectifs Stratégiques Détaillés",
+      "subtitle": "Piliers méthodiques guidant nos activités de recherche, de fabrication, de rayonnement commercial et d'excellence humaine.",
+      "pillars": {
+        "1": {
+          "title": "1. R&D Résiliente au Changement Climatique",
+          "description": "Développer et produire des variétés exclusives de semences à haut rendement, ainsi que des engrais simples et organiques conçus pour résister au changement climatique.",
+          "detail": "Investir dans la sélection variétale climato-intelligente et les amendements organiques bioactifs capables de résister aux fortes chaleurs, à la salinité et aux sécheresses prolongées."
+        },
+        "2": {
+          "title": "2. Normes de Qualité Sans Compromis",
+          "description": "Maintenir des normes de qualité rigoureuses sur l'ensemble des produits et des processus opérationnels pour mériter la confiance durable des agriculteurs et des partenaires B2B.",
+          "detail": "Appliquer des protocoles de contrôle stricts en laboratoire (pureté variétale, taux de germination, traçabilité physico-chimique) sur chaque lot de semences et chaque formulation d'engrais."
+        },
+        "3": {
+          "title": "3. Expansion Régionale, Continentale & Mondiale",
+          "description": "Renforcer notre position sur le marché égyptien tout en menant une expansion ciblée sur les marchés africains, arabes et internationaux.",
+          "detail": "Bâtir des canaux d'exportation B2B performants, des réseaux de distribution solides et un support technique de proximité dans les zones agricoles en forte croissance."
+        },
+        "4": {
+          "title": "4. Capital Humain Scientifique & d'Intervention Terrain",
+          "description": "Investir dans des collaborateurs d'élite combinant qualifications scientifiques supérieures et expérience pratique de terrain.",
+          "detail": "Développer l'expertise agronomique par des programmes de formation continue, des coopérations avec les instituts agronomiques et des équipes d'intervention sur site."
+        },
+        "5": {
+          "title": "5. Transfert Technologique International",
+          "description": "Tirer parti de l'expérience multinationale des fondateurs pour adopter les technologies mondiales les plus avancées dans la production et la distribution des semences.",
+          "detail": "Accélérer l'adoption de semences hybrides modernes, de fertilisants bio-organiques innovants et d'outils de surveillance agronomique digitale à travers nos marchés."
+        }
+      }
+    },
+    "images": {
+      "field1": "Vaste champ de maïs vert certifié sous ciel dégagé illustrant la vigueur et la densité de la culture",
+      "field2": "Moissonneuses-batteuses de grande capacité récoltant le blé doré le long d'un vaste horizon agricole",
+      "field3": "Agronome expert inspectant la maturité et la qualité d'un champ de blé doré avant la récolte",
+      "field4": "Mains d'un spécialiste examinant des gousses de fèves saines et vigoureuses sur le plant",
+      "field5": "Vue panoramique en plongée sur des cultures vigoureuses et l'horizon rural illustrant le développement durable",
+      "plant1": "Plant de fèves chargé de gousses généreuses avec irrigation au goutte-à-goutte et fertilisation équilibrée",
+      "plant2": "Vue verticale d'un plant de fève robuste démontrant une croissance végétative et une charge de gousses remarquables",
+      "plant3": "Plants de concombres sous serre portant des fruits réguliers et des fleurs jaunes sous contrôle agronomique de pointe",
+      "plant4": "Perspective immersive au cœur d'un couvert végétal de maïs vert dense traduisant un haut potentiel de rendement",
+      "plant5": "Gros plan détaillé sur des gousses de fèves saines démontrant une pureté variétale et une résistance accrue",
+      "plant6": "Plant de fève productive en pleine floraison et nouaison précoce illustrant le potentiel génétique supérieur"
+    },
+    "cta": {
+      "badge": "Partenariats Agricoles Stratégiques",
+      "title": "Prêt à Développer Vos Rendements & la Vitalité de Vos Sols ?",
+      "subtitle": "Associez-vous directement avec Seinagro pour accéder à des semences certifiées résistantes au climat et à une fertilisation de précision adossées à un leadership agronomique multinational.",
+      "partnerButton": "Partenaire avec nous",
+      "exploreButton": "Explorer nos offres"
+    }
   }
 }

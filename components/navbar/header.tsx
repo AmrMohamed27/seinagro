@@ -1,4 +1,5 @@
 "use client";
+
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
@@ -25,31 +26,28 @@ const Header = () => {
   return (
     <>
       <AnimatePresence>
-        {/* When scrolledPast is true, show this fixed header */}
+        {/* When scrolledPast is true, show this sticky/fixed header */}
         {scrolledPast && (
-          <motion.div
-            className="top-0 right-0 left-0 z-50 fixed bg-background backdrop-blur-2xl border-b-2 h-24"
-            initial={{ y: -100, opacity: 0 }}
-            animate={{ y: 0, opacity: 0.9 }}
-            exit={{ y: -100, opacity: 0 }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
+          <motion.header
+            className="top-0 inset-x-0 z-50 fixed bg-background/90 backdrop-blur-md border-b border-border h-20 shadow-xs"
+            initial={{ y: -80, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: -80, opacity: 0 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
           >
-            <NavbarContent />
-          </motion.div>
+            <NavbarContent scrolled={true} />
+          </motion.header>
         )}
       </AnimatePresence>
-      {/* This is the initial absolute header that's always present when not scrolled */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.7, ease: "easeInOut" }}
+      {/* Initial absolute header over hero */}
+      <header
         className={cn(
-          "absolute top-0 left-0 right-0 z-40 h-24 text-white  ",
+          "top-0 inset-x-0 z-40 absolute h-20 transition-opacity duration-300",
           scrolledPast ? "opacity-0 pointer-events-none" : "opacity-100"
         )}
       >
-        <NavbarContent />
-      </motion.div>
+        <NavbarContent scrolled={false} />
+      </header>
     </>
   );
 };

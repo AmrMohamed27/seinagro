@@ -1,100 +1,120 @@
-import { Link } from "@/i18n/navigation";
-import { renderGreenHtml } from "@/lib/utils";
-import { Mail, Notebook, Phone } from "lucide-react";
+import ContactForm from "@/components/contact-form";
+import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import { useTranslations } from "next-intl";
-import {
-  FaFacebook as FacebookIcon,
-  FaYoutube as YoutubeIcon,
-} from "react-icons/fa";
-import ContactForm from "../contact-form";
-import AnimatedSection from "./animated-section";
 
-const ContactSection = () => {
-  const t = useTranslations("HomePage.Contact");
+const ExportInquirySection = () => {
+  const t = useTranslations("Contact");
+
   return (
-    <AnimatedSection
+    <section
       id="contact"
-      firstChild
-      className="flex flex-col justify-center items-center gap-8 mx-auto px-2 container"
+      aria-labelledby="contact-heading"
+      className="py-12 md:py-16 bg-background relative overflow-hidden"
     >
-      <h2
-        className="font-bold md:text-3xl lg:text-5xl"
-        dangerouslySetInnerHTML={{
-          __html: renderGreenHtml(t.raw("title")),
-        }}
-      ></h2>
-      <div className="flex flex-row flex-wrap justify-between items-start gap-16 w-full">
-        {/* Form */}
-        <ContactForm />
-        {/* Info */}
-        <div className="flex flex-col gap-4">
-          <p className="text-start">{t("description")}</p>
-          {/* Phone */}
-          <div className="flex flex-row items-start gap-4">
-            <div className="flex flex-row items-center gap-2">
-              <Phone size={16} />
-              <span className="text-muted-foreground">{t("Phone.label")}</span>
+      <div className="container mx-auto px-4 md:px-8">
+        {/* Section Header */}
+        <div className="max-w-3xl flex flex-col gap-4 mb-8 md:mb-10">
+          <div className="inline-flex items-center gap-2 self-start px-3 py-1 rounded-full bg-forest/10 dark:bg-forest/20 text-forest dark:text-forest text-xs sm:text-sm font-semibold tracking-wide">
+            <span>{t("sectionBadge")}</span>
+          </div>
+          <h2
+            id="contact-heading"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground"
+          >
+            {t("title")}
+          </h2>
+          <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
+            {t("subtitle")}
+          </p>
+        </div>
+
+        {/* 2-Column Layout: Form (7 cols) + Official HQ Details (5 cols) */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+          {/* Inquiry Form */}
+          <div className="lg:col-span-7 p-6 sm:p-8 rounded-2xl bg-card border border-border shadow-xs">
+            <ContactForm />
+          </div>
+
+          {/* Official HQ Contact Info Card */}
+          <div className="lg:col-span-5 flex flex-col gap-6 p-6 sm:p-8 rounded-2xl bg-surface-cream/70 dark:bg-card border-2 border-border shadow-xs">
+            <h3 className="text-xl font-bold text-foreground">
+              {t("hq.title")}
+            </h3>
+
+            <div className="flex flex-col gap-5 text-sm" role="list">
+              {/* Address */}
+              <div className="flex items-start gap-3.5" role="listitem">
+                <div className="p-2.5 rounded-lg bg-forest/10 text-forest dark:text-forest shrink-0">
+                  <MapPin className="size-5" aria-hidden="true" />
+                </div>
+                <div className="flex flex-col gap-0.5">
+                  <span className="font-semibold text-foreground">
+                    {t("hq.city")}, {t("hq.country")}
+                  </span>
+                  <span className="text-muted-foreground leading-relaxed">
+                    {t("hq.address")}
+                  </span>
+                </div>
+              </div>
+
+              {/* Phone */}
+              <div className="flex items-start gap-3.5" role="listitem">
+                <div className="p-2.5 rounded-lg bg-forest/10 text-forest dark:text-forest shrink-0">
+                  <Phone className="size-5" aria-hidden="true" />
+                </div>
+                <div className="flex flex-col gap-0.5">
+                  <span className="font-semibold text-foreground">
+                    {t("hq.phoneLabel")}
+                  </span>
+                  <a
+                    href="tel:+201122228970"
+                    dir="ltr"
+                    className="text-muted-foreground hover:text-forest dark:hover:text-forest transition-colors text-start"
+                  >
+                    +20 11 2222 8970
+                  </a>
+                </div>
+              </div>
+
+              {/* Email */}
+              <div className="flex items-start gap-3.5" role="listitem">
+                <div className="p-2.5 rounded-lg bg-forest/10 text-forest dark:text-forest shrink-0">
+                  <Mail className="size-5" aria-hidden="true" />
+                </div>
+                <div className="flex flex-col gap-0.5">
+                  <span className="font-semibold text-foreground">
+                    {t("hq.emailLabel")}
+                  </span>
+                  <a
+                    href="mailto:info@seinagro.com"
+                    dir="ltr"
+                    className="text-muted-foreground hover:text-forest dark:hover:text-forest transition-colors text-start"
+                  >
+                    info@seinagro.com
+                  </a>
+                </div>
+              </div>
+
+              {/* Working Hours */}
+              <div className="flex items-start gap-3.5" role="listitem">
+                <div className="p-2.5 rounded-lg bg-forest/10 text-forest dark:text-forest shrink-0">
+                  <Clock className="size-5" aria-hidden="true" />
+                </div>
+                <div className="flex flex-col gap-0.5">
+                  <span className="font-semibold text-foreground">
+                    {t("hq.hoursLabel")}
+                  </span>
+                  <span className="text-muted-foreground leading-relaxed">
+                    {t("hq.hours")}
+                  </span>
+                </div>
+              </div>
             </div>
-            <span dir="ltr">{t("Phone.value")}</span>
-          </div>
-          <div className="flex flex-row items-start gap-4">
-            <div className="flex flex-row items-center gap-2">
-              <Phone size={16} />
-              <span className="text-muted-foreground">{t("Phone2.label")}</span>
-            </div>
-            <span dir="ltr">{t("Phone2.value")}</span>
-          </div>
-          {/* Email */}
-          <div className="flex flex-row items-start gap-4">
-            <div className="flex flex-row items-center gap-2">
-              <Mail size={16} />
-              <span className="text-muted-foreground">{t("Email.label")}</span>
-            </div>
-            <span>{t("Email.value")}</span>
-          </div>
-          <div className="flex flex-row items-start gap-4">
-            <div className="flex flex-row items-center gap-2">
-              <Mail size={16} />
-              <span className="text-muted-foreground">{t("Email2.label")}</span>
-            </div>
-            <span>{t("Email2.value")}</span>
-          </div>
-          {/* Address */}
-          <div className="flex flex-row items-start gap-4">
-            <div className="flex flex-row items-center gap-2">
-              <Notebook size={16} />
-              <span className="text-muted-foreground">
-                {t("Address.label")}
-              </span>
-            </div>
-            <span>{t("Address.value")}</span>
-          </div>
-          {/* Facebook */}
-          <div className="flex flex-row items-center gap-2">
-            <FacebookIcon size={16} className="shrink-0" />
-            <Link
-              className="hover:underline"
-              href={t("socialMedia.facebook.link")}
-              target="_blank"
-            >
-              {t("socialMedia.facebook.label")}
-            </Link>
-          </div>
-          {/* Youtube */}
-          <div className="flex flex-row items-center gap-2">
-            <YoutubeIcon size={16} className="shrink-0" />
-            <Link
-              className="hover:underline"
-              href={t("socialMedia.youtube.link")}
-              target="_blank"
-            >
-              {t("socialMedia.youtube.label")}
-            </Link>
           </div>
         </div>
       </div>
-    </AnimatedSection>
+    </section>
   );
 };
 
-export default ContactSection;
+export default ExportInquirySection;

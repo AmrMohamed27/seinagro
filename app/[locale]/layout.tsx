@@ -10,9 +10,8 @@ import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { getLangDir } from "rtl-detect";
-import { ThemeProvider } from "../providers/theme-provider";
 import { latinFont, arabicFont } from "@/lib/fonts";
-import { BRAND_ASSETS, COMPANY_INFO } from "@/lib/brand";
+import { COMPANY_INFO, getOgImage } from "@/lib/brand";
 
 export async function generateMetadata({
   params,
@@ -47,7 +46,7 @@ export async function generateMetadata({
       siteName: locale === "ar" ? COMPANY_INFO.name.ar : COMPANY_INFO.name.en,
       images: [
         {
-          url: `${baseUrl}${BRAND_ASSETS.hero.ogImage}`,
+          url: `${baseUrl}${getOgImage(locale)}`,
           width: 2752,
           height: 1536,
           alt: t("title"),
@@ -60,7 +59,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: t("title"),
       description: t("description"),
-      images: [`${baseUrl}${BRAND_ASSETS.hero.ogImage}`],
+      images: [`${baseUrl}${getOgImage(locale)}`],
     },
   };
 }
@@ -89,12 +88,6 @@ export default async function LocaleLayout({
             : `${latinFont.className} leading-normal`
         )}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
           <NextIntlClientProvider>
             <Header />
             <main>
@@ -105,7 +98,6 @@ export default async function LocaleLayout({
             </main>
             <Footer />
           </NextIntlClientProvider>
-        </ThemeProvider>
       </body>
     </html>
   );

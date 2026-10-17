@@ -1,6 +1,7 @@
 "use client";
+
 import { cn } from "@/lib/utils";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 
 type Props = {
   children?: React.ReactNode;
@@ -9,7 +10,6 @@ type Props = {
   duration?: number;
   opacity?: number;
   firstChild?: boolean;
-  exit?: boolean;
 };
 
 const AnimatedSection = ({
@@ -19,38 +19,39 @@ const AnimatedSection = ({
   duration = 0.5,
   opacity = 1,
   firstChild = false,
-  exit = false,
 }: Props) => {
-  return firstChild ? (
+  const shouldReduceMotion = useReducedMotion();
+
+  const initialAnimation = shouldReduceMotion
+    ? { opacity: 0 }
+    : { y: 24, opacity: 0 };
+
+  const targetAnimation = shouldReduceMotion
+    ? { opacity }
+    : { y: 0, opacity };
+
+  if (firstChild) {
+    return (
+      <motion.div
+        id={id}
+        initial={initialAnimation}
+        animate={targetAnimation}
+        transition={{ duration, ease: "easeOut" }}
+        className={cn("w-full", className)}
+      >
+        {children}
+      </motion.div>
+    );
+  }
+
+  return (
     <motion.div
-      initial={{ y: -100, opacity: 0 }}
-      animate={{ y: 0, opacity }}
-      transition={{ duration, ease: "easeInOut" }}
-      className={cn("border-t-2 pt-12 px-2 sm:px-4 md:px-8 mt-8", className)}
       id={id}
-    >
-      {children}
-    </motion.div>
-  ) : exit ? (
-    <motion.div
-      initial={{ y: -100, opacity: 0 }}
-      whileInView={{ y: 0, opacity }}
-      viewport={{ once: true }}
-      exit={{ y: -100, opacity: 0 }}
-      transition={{ duration, ease: "easeInOut" }}
-      className={cn("border-t-2 pt-12 px-2 sm:px-4 md:px-8 mt-8", className)}
-      id={id}
-    >
-      {children}
-    </motion.div>
-  ) : (
-    <motion.div
-      initial={{ y: -100, opacity: 0 }}
-      whileInView={{ y: 0, opacity }}
-      viewport={{ once: true }}
-      transition={{ duration, ease: "easeInOut" }}
-      className={cn("border-t-2 pt-12 px-2 sm:px-4 md:px-8 mt-8", className)}
-      id={id}
+      initial={initialAnimation}
+      whileInView={targetAnimation}
+      viewport={{ once: true, margin: "-80px" }}
+      transition={{ duration, ease: "easeOut" }}
+      className={cn("w-full", className)}
     >
       {children}
     </motion.div>

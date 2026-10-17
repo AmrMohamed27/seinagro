@@ -88,7 +88,7 @@ for (const loc of locales) {
 // Check Arabic specific brand spelling
 const arContent = fs.readFileSync(path.join(root, "messages", "ar.json"), "utf8");
 if (arContent.includes("Seinagro")) {
-  console.error('Latin brand "Seinagro" found in messages/ar.json. Arabic must use "سيناغرو".');
+  console.error('Latin brand "Seinagro" found in messages/ar.json. Arabic must use "سيناجرو".');
   hasError = true;
 }
 

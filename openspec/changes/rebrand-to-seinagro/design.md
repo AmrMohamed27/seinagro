@@ -106,11 +106,11 @@ Bento grid uses CSS grid with `col-span`/`row-span` that are direction-agnostic 
 Use `hero-1.jpg` (high-res) via `next/image` with `priority`, `fill`, `sizes="100vw"`, `object-cover`, and a forest-to-transparent gradient overlay (start-aligned in both directions) for text legibility. `hero-3.jpg` is the OG image candidate; `hero-2.jpg` (1024px) is not used full-bleed. Logo: header uses `logo-mark.png` + locale wordmark (`name-stack2-arabic.png` for `ar`, `name-stack2-english.png` otherwise); footer uses `logo-stack.png`. Large hero JPEGs (2.2-2.5 MB) are served through Next image optimization.
 
 ### D5. i18n structure
-Replace legacy namespaces with: `Meta`, `Nav`, `Hero`, `Legacy`, `Offerings`, `VisionMission`, `Objectives`, `Contact`, `Footer`, `NotFound`. Rich text uses `t.rich()` with `<bold>`/`<accent>` tags instead of `dangerouslySetInnerHTML` + regex helpers (`renderGreenHtml`/`renderBoldHtml` removed). A script-free parity check (`scripts/check-i18n.mjs`) compares recursive key sets across the three files. English is authored first from `openspec/project.md`; Arabic (Modern Standard business Arabic, brand "سيناغرو") and French (international/African B2B, brand "Seinagro") are authored idiomatically.
+Replace legacy namespaces with: `Meta`, `Nav`, `Hero`, `Legacy`, `Offerings`, `VisionMission`, `Objectives`, `Contact`, `Footer`, `NotFound`. Rich text uses `t.rich()` with `<bold>`/`<accent>` tags instead of `dangerouslySetInnerHTML` + regex helpers (`renderGreenHtml`/`renderBoldHtml` removed). A script-free parity check (`scripts/check-i18n.mjs`) compares recursive key sets across the three files. English is authored first from `openspec/project.md`; Arabic (Modern Standard business Arabic, brand "سيناجرو") and French (international/African B2B, brand "Seinagro") are authored idiomatically.
 
 ### D6. SEO & Metadata
 `app/[locale]/layout.tsx` gains `generateMetadata({params})` using `getTranslations('Meta')`:
-- Title template: `%s | Seinagro` / `%s | سيناغرو`
+- Title template: `%s | Seinagro` / `%s | سيناجرو`
 - Canonical base: `https://www.seinagro.com`
 - `alternates.languages`: `ar: "https://www.seinagro.com/ar"`, `en: "https://www.seinagro.com/en"`, `fr: "https://www.seinagro.com/fr"`, `x-default: "https://www.seinagro.com/ar"`
 - Open Graph tags with localized descriptions and `hero-3.jpg`.
@@ -130,13 +130,50 @@ Replace legacy namespaces with: `Meta`, `Nav`, `Hero`, `Legacy`, `Offerings`, `V
 ### D9. RTL guard enforcement
 Every UI task runs the `i18n-rtl-guard` skill checks: (1) logical properties only, (2) same-step ar/en/fr dictionary updates with no hardcoded JSX strings, (3) Arabic font/line-height scaling without layout shifts. Grep gate (`\b(ml|mr|pl|pr|left|right)-|text-(left|right)`) verified clean.
 
+### D10. Client Photography & Dedicated About Us Page Architecture
+
+With the addition of 11 authentic client photography assets (`field1.jpeg`–`field5.jpeg` and `plant1.jpeg`–`plant6.jpeg`), Seinagro incorporates genuine operational imagery across both the Home landing page (`/[locale]`) and a dedicated narrative About Us page (`/[locale]/about`).
+
+#### Visual Audit & Characteristics of the 11 Client Assets
+
+| Filename | Crop / Subject Matter | Orientation & Dimensions | Best Aspect Ratio | Object Positioning | Primary Placement |
+| :-- | :-- | :-- | :-- | :-- | :-- |
+| `field1.jpeg` | High-density green corn (maize) field under clear sky | Landscape (1600x960) | 16:9 / 5:3 | `object-center` | Home: Core Offerings (Seeds) Background / Showcase |
+| `field2.jpeg` | Large-scale wheat harvest with dual combine harvesters | Landscape (1152x864) | 4:3 / 16:9 | `object-center` | About Page: Founders' Legacy & Regional Impact Hero |
+| `field3.jpeg` | **Agronomist / Field Executive standing in ripe wheat field** (with harvester in far backdrop) | Portrait (864x1152) | 3:4 / 4:5 | `object-top` | **About Page: Human Capital & Scientific/Field Expertise** |
+| `field4.jpeg` | Farmer / agronomist hands inspecting thriving fava bean pods on plant | Square / Portrait (720x728) | 1:1 / 4:5 | `object-center` | Home: Quality & Precision Inspection / Bento R&D |
+| `field5.jpeg` | Extensive aerial/elevated view of green corn rows leading to village horizon | Landscape (1080x648) | 16:9 / 5:3 | `object-center` | About Page: Vision & Sustainable Horizon Banner |
+| `plant1.jpeg` | Fava bean crop stem laden with healthy green pods over soil & drip irrigation | Landscape (1600x900) | 16:9 | `object-center` | Home: Core Offerings (Fertilizers & Soil Nutrition) |
+| `plant2.jpeg` | Vertical growth of healthy broad bean stalk showing prolific pod development | Portrait / Tall (936x2080) | 9:16 / 1:2 | `object-center` | About Page: 5 Strategic Objectives (Bento Feature Card) |
+| `plant3.jpeg` | High-yield greenhouse cucumber vines with pristine fruit and yellow blossoms | Portrait (720x1280) | 9:16 / 3:4 | `object-center` | About Page: Climate-Controlled R&D & Tech Transfer |
+| `plant4.jpeg` | Dense canopy row perspective looking down vibrant green maize stalks | Portrait (720x960) | 3:4 / 4:5 | `object-center` | About Page: Field Excellence & Crop Vitality Showcase |
+| `plant5.jpeg` | Extreme close-up cluster of robust fava bean pods with lush foliage | Landscape / 4:3 (1599x1200) | 4:3 / 1:1 | `object-center` | Home: Strategic Objectives Bento (Climate Resilience) |
+| `plant6.jpeg` | Highly productive fava bean plant with dense pod set and white flowers | Portrait (1536x2048) | 3:4 / 4:5 | `object-center` | About Page: Quality Verification & Yield Optimization |
+
+#### Image-to-Section Mapping
+
+1. **Home Page (`/[locale]`):**
+   - **Hero Section:** `hero-1.jpg` (golden hour wheat field with text gradient overlay) retained for primary brand impact.
+   - **Offerings (Seeds Panel):** `field1.jpeg` (vast certified maize field showcase).
+   - **Offerings (Fertilizers Panel):** `plant1.jpeg` (healthy bean pods with soil and drip irrigation).
+   - **Strategic Objectives Bento Grid:**
+     - Objective 1 (Climate-Resilient R&D): `plant5.jpeg` (healthy pod cluster close-up).
+     - Objective 2 (Uncompromising Quality): `field4.jpeg` (hands-on crop inspection).
+
+2. **Dedicated About Us Page (`/[locale]/about`):**
+   - **About Hero:** `field2.jpeg` (large-scale wheat harvesting with combines across horizon).
+   - **Founders' Multinational Legacy:** `field5.jpeg` (expansive agricultural horizons across Egypt, Africa, and Asia).
+   - **Human Capital & Field Expertise:** `field3.jpeg` (`object-top` framing the agronomist in the field, representing Seinagro's elite field leadership and practical agronomic depth).
+   - **Vision & Mission Deep-Dive:** `plant4.jpeg` (flourishing maize canopy) & `plant3.jpeg` (greenhouse precision).
+   - **Strategic Objectives In-Depth Showcase:** `plant2.jpeg` (vertical growth stalk) & `plant6.jpeg` (dense flowering and pod set).
+
 ## Risks / Trade-offs
 
 - [Arabic/French copy quality] Model/translated drafts may read stiff → mandatory native-speaker review task before archive; keep glossary (seeds = التقاوي/البذور, fertilizers = الأسمدة, climate resilience = القدرة على مواجهة التغيرات المناخية).
 - [Orange contrast] `#F27509` fails as text on light → dedicated `harvest-ink` token and ink-on-orange buttons; verify with contrast check.
 - [Hero image weight] 2.5 MB JPEG → `next/image` optimization, `priority` only on hero; verify LCP.
 - [Legacy asset leftovers] Unreferenced images remain in `public/` → review list in tasks, delete only confirmed-unused.
-- [Breaking URLs] Handled by redirects (D8).
+- [Breaking URLs] Handled by redirects (D8) for `/departments`, `/clients`, `/products`; `/about` is unblocked to serve the new dedicated page.
 
 ## Migration Plan
 

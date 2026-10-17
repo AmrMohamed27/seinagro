@@ -7,7 +7,7 @@ The repository is a template of a previous company's site (legacy brand "Shahban
 ## What Changes
 
 - Purge every legacy brand reference ("Shahbandar", "الشهبندر", `shahbandar.biz`, `@SHAHBANDARSEED`, 1995/2004 history, Aswan silos, old client list, old product catalog) from code and `messages/{ar,en,fr}.json`.
-- Standardize the company name to **Seinagro** (en/fr) and **سيناغرو** (ar) everywhere, including metadata, footer, and email subject.
+- Standardize the company name to **Seinagro** (en/fr) and **سيناجرو** (ar) everywhere, including metadata, footer, and email subject.
 - Introduce a new Seinagro design system: palette derived from the new logo/hero (deep forest green, vibrant growth green, harvest orange, fertile-earth neutrals), replacing the olive-green/brown tokens in `app/globals.css`.
 - Replace the home page with a new six-section architecture: Hero (image, global-export positioning, dual CTAs), Founders' Legacy & About, Dual Core Offerings (Seeds vs Fertilizers), Vision & Mission split, 5-pillar Strategic Objectives bento grid, International B2B Export Inquiry.
 - Rewire logo usage to `public/assets/images/logo-*.png` / `name-stack2*.png` and hero to `hero-*.jpg`; remove references to missing `logo.png`, `leaves.png`, `hero.webm`, `company-logo-*.png`.
