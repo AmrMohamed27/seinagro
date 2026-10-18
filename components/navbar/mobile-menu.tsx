@@ -15,7 +15,6 @@ import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { useState } from "react";
-import { getLangDir } from "rtl-detect";
 import { NAV_ANCHORS } from "./navbar-content";
 
 interface MobileMenuProps {
@@ -27,13 +26,6 @@ const MobileMenu = ({ activeSection = "home" }: MobileMenuProps) => {
   const locale = useLocale();
   const [open, setOpen] = useState(false);
   const wordmarkSrc = getWordmark(locale);
-
-  // In RTL, "left" in the sheet corresponds to the sheet sliding from physical left (which is logical end/right depending on mapping),
-  // but with our logical sheet update:
-  // if dir is rtl, start is physical right, end is physical left.
-  // getLangDir === "rtl" -> side="right" opens on physical right (logical start)
-  const isRtl = getLangDir(locale) === "rtl";
-  const sheetSide = isRtl ? "right" : "left";
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
@@ -47,7 +39,7 @@ const MobileMenu = ({ activeSection = "home" }: MobileMenuProps) => {
           <MenuIcon className="size-5" />
         </Button>
       </SheetTrigger>
-      <SheetContent side={sheetSide} className="overflow-y-auto w-4/5 max-w-xs p-6">
+      <SheetContent side="start" className="overflow-y-auto w-4/5 max-w-xs p-6">
         <SheetHeader className="p-0 pb-6 border-b border-border">
           <SheetTitle asChild>
             <Link
