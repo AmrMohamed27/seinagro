@@ -12,7 +12,7 @@ See proposal.md for motivation. Observed current state (from the audit):
   - Canonical URL: `https://www.seinagro.com/`
   - Email: `info@seinagro.com`
   - Phone: `+20 11 2222 8970`
-  - HQ Address: Nubaria City, Arab Republic of Egypt (جمهورية مصر العربية – مدينة النوبارية)
+  - HQ Address: Nubariya City, Beheira Governorate, Egypt (مدينة النوبارية، محافظة البحيرة، مصر)
 
 Must stay: `i18n/*`, `middleware.ts`, direction logic in `app/[locale]/layout.tsx`, theme provider, language switcher, `lib/env.ts`, form stack.
 
@@ -173,7 +173,31 @@ With the addition of 11 authentic client photography assets (`field1.jpeg`–`fi
 - [Orange contrast] `#F27509` fails as text on light → dedicated `harvest-ink` token and ink-on-orange buttons; verify with contrast check.
 - [Hero image weight] 2.5 MB JPEG → `next/image` optimization, `priority` only on hero; verify LCP.
 - [Legacy asset leftovers] Unreferenced images remain in `public/` → review list in tasks, delete only confirmed-unused.
-- [Breaking URLs] Handled by redirects (D8) for `/departments`, `/clients`, `/products`; `/about` is unblocked to serve the new dedicated page.
+- [Breaking URLs] Handled by redirects (D8) for `/departments`, `/clients`; `/about`, `/products`, and `/services` serve dedicated corporate pages.
+
+### D11. Dedicated Products & Services Pages Architecture
+
+To provide B2B distributors, regional institutional clients, and international export partners with in-depth technical specifications and operational scope, Seinagro introduces dedicated routes: **Our Products (`/[locale]/products`)** and **Our Services (`/[locale]/services`)**.
+
+#### 1. Layout Differentiation & Aesthetic Strategy
+- **Our Products (`/[locale]/products`):**
+  - **Hero:** Punchy agronomic positioning focusing on high-yielding certified seeds & climate-resilient plant nutrition engineered for Egypt, Africa, and the Arab region.
+  - **Product Divisions Showcase:** 4 core divisions structured in distinct technical showcases:
+    1. *Certified & Exclusive Strategic Crop Seeds:* High-yielding varieties bred for climate-change resilience and regional soil adaptation.
+    2. *Straight Fertilizers:* Targeted single-nutrient formulations for precision crop stage nutrition.
+    3. *Compound Fertilizers:* Balanced multi-nutrient solutions for maximum yield stability.
+    4. *Specialized Organic Fertilizers:* Sustainable bio-organic formulations designed to restore soil vitality and combat environmental stress.
+  - **Quality & Climate-Resilience Standard:** Detailed agronomic panel outlining strict quality controls, purity benchmarks, and international standards.
+  - **B2B Catalog & Export RFQ CTA:** Direct call to action inviting institutional buyers, distributors, and large farms to request current seasonal availability and technical data sheets.
+- **Our Services (`/[locale]/services`):**
+  - **Hero:** End-to-end agricultural production, trading, and technical field solutions backed by decades of multinational executive experience across Egypt, Africa, and Asia.
+  - **4 Core Service Pillars:**
+    1. *Seed Breeding, Development & Production:* Investing in agricultural creativity and R&D to develop climate-resilient strategic crop varieties.
+    2. *Fertilizer Trading & Supply Chain Distribution:* Reliable B2B supply across the Egyptian market (rooted in Nubariya, Beheira) and targeted export channels across Africa and the Arab world.
+    3. *Agronomic Field Support & Practical Expertise:* Deploying a workforce blending high scientific qualifications with hands-on field guidance alongside farmers and partners.
+    4. *Global Technology Transfer & Market Advisory:* Leveraging founders' multinational track record to bring global best practices in seed production and agricultural marketing.
+  - **4-Step Partnership & Supply Workflow:** Visual structured flow: Consultation & Crop Assessment -> Variety/Fertilizer Selection -> Quality-Assured Supply -> Ongoing Field Follow-up.
+  - **Institutional Consultation CTA:** Actionable engagement path for regional ministries, agribusiness investors, and commercial farming enterprises.
 
 ## Migration Plan
 

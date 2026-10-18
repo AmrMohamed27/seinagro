@@ -8,6 +8,8 @@
   "Nav": {
     "home": "Accueil",
     "about": "À Propos",
+    "products": "Nos Produits",
+    "services": "Nos Services",
     "offerings": "Nos Pôles",
     "vision": "Vision & Mission",
     "objectives": "Objectifs Stratégiques",
@@ -52,11 +54,16 @@
     "sectionBadge": "Pôles d'Excellence",
     "title": "Solutions Agricoles Intégrées",
     "subtitle": "Conçues pour la résilience climatique, une productivité maximale et la préservation de la vitalité des sols.",
+    "exploreAllCta": "Découvrir Notre Gamme Complète",
     "seeds": {
       "badge": "Semences Certifiées Haut Rendement",
       "title": "Semences Certifiées de Cultures Stratégiques",
       "description": "Production et développement de semences exclusives et certifiées de cultures stratégiques à haut potentiel de rendement, sélectionnées pour leur résistance aux stress climatiques et aux maladies.",
       "climateResilience": "Sélection génétique rigoureuse garantissant une tolérance accrue à la sécheresse, une efficience hydrique et un taux de germination supérieur.",
+      "tag": "Semences Stratégiques Certifiées",
+      "exploreCta": "Découvrir Nos Semences Certifiées",
+      "videoBadge": "Sur le Terrain • Semences en Action",
+      "videoAlt": "Enregistrement authentique sur le terrain démontrant la performance des semences certifiées Seinagro",
       "items": {
         "1": "Variétés et hybrides simples et triples exclusifs à la société",
         "2": "Pureté génétique certifiée par des contrôles rigoureux en laboratoire",
@@ -69,11 +76,41 @@
       "title": "Engrais Simples, Composés et Organiques Spécialisés",
       "description": "Négoce et distribution d'une gamme complète d'engrais minéraux simples, d'engrais composés NPK et d'engrais organiques spécialisés pour maximiser l'efficience nutritive.",
       "climateResilience": "Formulations protectrices restaurant la fertilité des sols face aux perturbations climatiques.",
+      "tags": {
+        "straight": "Engrais Simples",
+        "compound": "Composés NPK",
+        "organic": "Organiques Spécialisés"
+      },
+      "exploreCta": "Découvrir Nos Solutions de Nutrition",
       "items": {
         "1": "Engrais simples de haute pureté et concentration (azote, phosphore, potassium)",
         "2": "Formules composées NPK équilibrées répondant aux besoins précis des cultures",
         "3": "Solutions organiques et biologiques spécialisées régénérant la matière organique",
         "4": "Optimisation maximale de l'absorption et impact écologique durable"
+      }
+    }
+  },
+  "ServicesPreview": {
+    "sectionBadge": "Nos Services & Solutions Agronomiques",
+    "title": "Des Solutions Agronomiques Complètes Fondées sur l'Excellence Multinationale",
+    "subtitle": "Depuis Noubariya (Gouvernorat de Béheira), Seinagro apporte un soutien opérationnel et logistique de premier ordre aux acteurs agricoles en Égypte, en Afrique et dans le monde arabe.",
+    "exploreCta": "Découvrir Nos Services B2B",
+    "cards": {
+      "rAndD": {
+        "title": "Sélection & R&D Variétale Exclusive",
+        "description": "Programmes de recherche agronomique pour développer des variétés de cultures stratégiques résilientes au climat et à haut potentiel de rendement."
+      },
+      "trading": {
+        "title": "Négoce & Distribution Régionale d'Engrais",
+        "description": "Chaînes d'approvisionnement fiables et réactives approvisionnant les grands projets et les couloirs d'exportation africains et régionaux."
+      },
+      "fieldSupport": {
+        "title": "Accompagnement Agronomique de Terrain",
+        "description": "Une présence technique active aux côtés des exploitants pour les diagnostics culturaux et le pilotage des programmes nutritionnels."
+      },
+      "techTransfer": {
+        "title": "Transfert de Technologies Globales",
+        "description": "Valorisation de l'expertise multinationale de nos fondateurs pour adopter les standards de production et d'exportation internationaux."
       }
     }
   },
@@ -93,6 +130,8 @@
     "sectionBadge": "Orientation Stratégique",
     "title": "5 Objectifs Stratégiques",
     "subtitle": "Notre feuille de route institutionnelle pour une croissance durable, un leadership scientifique et un impact régional fort.",
+    "videoBadge": "Sur le Terrain • Semences en Action",
+    "videoAlt": "Enregistrement authentique sur le terrain démontrant la performance des semences certifiées Seinagro",
     "pillars": {
       "1": {
         "title": "R&D Résiliente au Changement Climatique",
@@ -104,7 +143,7 @@
       },
       "3": {
         "title": "Expansion Régionale et Mondiale",
-        "description": "Consolider les parts de marché en Égypte tout en menant une expansion ciblée et méthodique sur les marchés africains, arabes et internationaux."
+        "description": "Consolider notre ancrage de premier plan en Égypte tout en menant un déploiement international structuré pour bâtir des canaux d'exportation B2B performants, des réseaux de distribution solides et des partenariats de long terme en Afrique, dans le monde arabe et à l'international."
       },
       "4": {
         "title": "Capital Humain Scientifique et de Terrain",
@@ -112,7 +151,7 @@
       },
       "5": {
         "title": "Transfert Technologique Mondial",
-        "description": "Mettre à profit l'expérience multinationale des fondateurs pour adopter et adapter les technologies mondiales les plus avancées dans la production et la commercialisation des semences."
+        "description": "Mobiliser la longue expertise multinationale de nos fondateurs pour transférer et adapter les biotechnologies végétales de pointe, les engrais bio-organiques novateurs et les outils de surveillance agronomique digitale à travers l'ensemble de nos marchés."
       }
     }
   },
@@ -120,11 +159,18 @@
     "sectionBadge": "Demandes d'Exportation",
     "title": "Exportation & Partenariat Commercial",
     "subtitle": "Échangez directement avec notre direction du commerce international et nos experts agronomiques.",
+    "homeCta": {
+      "badge": "Partenariat Institutionnel",
+      "title": "Développez Votre Partenariat Agricole avec Seinagro",
+      "subtitle": "Prenez contact avec notre direction du commerce international pour échanger sur l'approvisionnement en semences certifiées, la distribution d'engrais spécialisés et les opportunités d'exportation.",
+      "contactButton": "Contacter Notre Équipe Export",
+      "exploreButton": "Explorer Nos Produits"
+    },
     "hq": {
       "title": "Siège Officiel",
       "country": "République Arabe d'Égypte",
-      "city": "Ville de Noubaria",
-      "address": "Ville de Noubaria, République Arabe d'Égypte",
+      "city": "Ville de Noubariya, Gouvernorat de Béheira",
+      "address": "Ville de Noubariya, Gouvernorat de Béheira, Égypte",
       "phone": "+20 11 2222 8970",
       "phoneLabel": "Téléphone",
       "email": "info@seinagro.com",
@@ -172,13 +218,15 @@
     "tagline": "Pionnier de l'innovation des semences et engrais en Égypte et sur les marchés mondiaux.",
     "copyright": "© Seinagro. Tous droits réservés.",
     "headquartersLabel": "Siège",
-    "headquartersValue": "Ville de Noubaria, République Arabe d'Égypte",
+    "headquartersValue": "Ville de Noubariya, Gouvernorat de Béheira, Égypte",
     "phoneLabel": "Téléphone",
     "phoneValue": "+20 11 2222 8970",
     "emailLabel": "Email",
     "emailValue": "info@seinagro.com",
     "quickLinks": "Liens Rapides",
-    "pillarsLabel": "Pôles Stratégiques"
+    "pillarsLabel": "Pôles Stratégiques",
+    "brandName": "SEINAGRO",
+    "subTagline": "Semences Certifiées & Engrais Spécialisés"
   },
   "NotFound": {
     "title": "Page Non Trouvée",
@@ -306,8 +354,200 @@
       "badge": "Partenariats Agricoles Stratégiques",
       "title": "Prêt à Développer Vos Rendements & la Vitalité de Vos Sols ?",
       "subtitle": "Associez-vous directement avec Seinagro pour accéder à des semences certifiées résistantes au climat et à une fertilisation de précision adossées à un leadership agronomique multinational.",
-      "partnerButton": "Partenaire avec nous",
-      "exploreButton": "Explorer nos offres"
+      "partnerButton": "Devenir Partenaire",
+      "exploreButton": "Découvrir Nos Produits"
     }
+  },
+  "productsPage": {
+    "meta": {
+      "title": "Nos Produits | Semences Stratégiques Certifiées & Engrais Avancés",
+      "description": "Découvrez le portefeuille de semences certifiées à haut rendement et de nutrition végétale résiliente au climat de Seinagro, conçues pour l'Égypte, l'Afrique et le monde arabe."
+    },
+    "hero": {
+      "badge": "Portefeuille de Produits",
+      "title": "Semences Certifiées à Haut Rendement & Nutrition Végétale Résiliente au Climat",
+      "subtitle": "Développées pour maximiser la vigueur génétique, l'adaptation aux stress abiotiques et la fertilité équilibrée des sols en Égypte, sur le continent africain et dans la région arabe."
+    },
+    "divisions": {
+      "badge": "Pôles de Production",
+      "title": "Quatre Piliers de Performance Agronomique",
+      "subtitle": "Des intrants agricoles rigoureusement certifiés pour garantir la stabilité des rendements et optimiser l'efficience des ressources.",
+      "seeds": {
+        "tag": "Excellence Génétique",
+        "title": "Semences Certifiées & Exclusives de Cultures Stratégiques",
+        "description": "Variétés sélectionnées et certifiées à haut rendement, spécialement adaptées à la résilience climatique et aux sols régionaux pour les cultures vivrières stratégiques.",
+        "features": [
+          "Pureté génétique rigoureuse et taux de germination certifiés",
+          "Tolérance éprouvée aux stress thermiques et à la salinité des sols",
+          "Sélectionnées pour les cultures stratégiques garantes de la sécurité alimentaire"
+        ]
+      },
+      "straight": {
+        "tag": "Nutrition Ciblée",
+        "title": "Engrais Simples",
+        "description": "Formulations pures et concentrées en éléments nutritifs uniques (azote, phosphore, potassium) pour les stades physiologiques critiques des cultures.",
+        "features": [
+          "Haute concentration élémentaire assurant une assimilation rapide",
+          "Solubilité immédiate et compatibilité totale avec les réseaux d'irrigation modernes",
+          "Correction ciblée et réactive des carences végétatives et reproductives"
+        ]
+      },
+      "compound": {
+        "tag": "Équilibre Minéral",
+        "title": "Engrais Composés",
+        "description": "Solutions nutritives complètes et équilibrées associant macro et oligo-éléments pour stimuler le système racinaire et sécuriser un rendement régulier tout au long du cycle.",
+        "features": [
+          "Répartition homogène des éléments dans chaque granulé",
+          "Synergie minérale optimale évitant les blocages d'éléments dans le sol",
+          "Performance fiable sur l'ensemble des cultures et systèmes d'irrigation"
+        ]
+      },
+      "organic": {
+        "tag": "Régénération des Sols",
+        "title": "Engrais Organiques Spécialisés",
+        "description": "Formulations bio-organiques durables conçues pour restaurer l'activité biologique des sols, optimiser la rétention hydrique et protéger contre le stress environnemental.",
+        "features": [
+          "Amélioration durable de la structure du sol et de la capacité d'échange cationique",
+          "Stimulation de l'immunité naturelle de la rhizosphère face aux chocs abiotiques",
+          "Parfaitement conformes aux standards de l'agriculture durable et d'exportation"
+        ]
+      }
+    },
+    "quality": {
+      "badge": "Normes Agronomiques",
+      "title": "Contrôle Qualité Rigoureux & Résilience Climatique",
+      "description": "Chaque lot produit, conditionné et distribué par Seinagro respecte des protocoles de contrôle rigoureux, des essais de validation aux champs et les standards agronomiques internationaux.",
+      "points": [
+        {
+          "title": "Pureté Génétique Certifiée",
+          "description": "Contrôles systématiques des taux de germination, de la vigueur des plantules et de la conformité variétale."
+        },
+        {
+          "title": "Formulations Minérales de Précision",
+          "description": "Analyses en laboratoire validant la solubilité exacte, la pureté chimique et la stabilité en solution."
+        },
+        {
+          "title": "Adaptation Climatique Régionale",
+          "description": "Évaluations continues sur le terrain dans divers contextes agroclimatiques en Égypte et en Afrique pour vérifier la tolérance à la chaleur et au stress hydrique."
+        }
+      ]
+    },
+    "cta": {
+      "badge": "Distribution & Grands Comptes",
+      "title": "Demande de Disponibilité Saisonnière & Fiches Techniques",
+      "subtitle": "Associez-vous à Seinagro pour vos approvisionnements commerciaux, vos appels d'offres de distribution et vos programmes de nutrition personnalisés.",
+      "catalogButton": "Demander le Catalogue B2B / Devis",
+      "consultButton": "Consulter Nos Agronomes"
+    }
+  },
+  "servicesPage": {
+    "meta": {
+      "title": "Nos Services | Production Agricole, Négoce Régional & Conseil Technique",
+      "description": "Solutions complètes de développement variétal, de négoce d'engrais et d'accompagnement agronomique de terrain fondées sur une expérience de direction multinationale."
+    },
+    "hero": {
+      "badge": "Services Agricoles Intégrés",
+      "title": "Solutions Agricoles Complètes Fondées sur une Expertise Internationale",
+      "subtitle": "Sélection et production de semences, logistique d'approvisionnement régionale fiable et accompagnement technique direct en Égypte, en Afrique et au Moyen-Orient."
+    },
+    "pillars": {
+      "badge": "Pôles de Services",
+      "title": "Quatre Piliers Stratégiques d'Excellence Opérationnelle",
+      "subtitle": "Allier la rigueur de la recherche scientifique et la proximité concrète sur le terrain pour valoriser les exploitations agricoles et les réseaux de distribution.",
+      "seedDevelopment": {
+        "tag": "R&D & Sélection",
+        "title": "Sélection, Développement & Production de Semences Exclusives",
+        "description": "Investir dans la recherche et l'innovation variétale pour développer des variétés de semences stratégiques exclusives, caractérisées par un haut potentiel de rendement et une forte tolérance au climat.",
+        "details": [
+          "Sélection de lignées génétiques performantes adaptées aux sols arides et valorisés",
+          "Essais comparatifs multi-sites pour confirmer la stabilité des caractères agronomiques",
+          "Multiplication et conditionnement commercial certifiés selon les normes les plus strictes"
+        ]
+      },
+      "supplyChain": {
+        "tag": "Négoce & Distribution",
+        "title": "Négoce & Distribution d'Engrais à l'Échelle Régionale et Internationale",
+        "description": "Opérations commerciales fiables desservant le marché égyptien depuis notre plateforme de Noubariya (Gouvernorat de Béheira), complétées par des couloirs d'exportation vers l'Afrique et le monde arabe.",
+        "details": [
+          "Plateforme logistique et d'entreposage stratégique située à Noubariya",
+          "Capacité d'approvisionnement en gros et en vrac pour distributeurs et grands projets",
+          "Procédures d'exportation fluides et conformes vers les marchés africains et régionaux"
+        ]
+      },
+      "fieldSupport": {
+        "tag": "Agronomie de Terrain",
+        "title": "Support Agronomique de Terrain & Expertise Appliquée",
+        "description": "Une équipe technique d'élite associant qualifications scientifiques supérieures et présence pratique aux côtés des producteurs tout au long du cycle cultural.",
+        "details": [
+          "Diagnostics culturaux in situ et analyses des besoins nutritionnels des sols",
+          "Élaboration de calendriers de fertilisation adaptés aux variétés et aux stades de développement",
+          "Suivi régulier sur les parcelles, du semis jusqu'à la maturation et la récolte"
+        ]
+      },
+      "techTransfer": {
+        "tag": "Conseil Stratégique",
+        "title": "Transfert de Technologies Globales & Conseil de Marché",
+        "description": "Mobiliser l'expérience multinationale des fondateurs de Seinagro pour faire bénéficier nos partenaires locaux et régionaux des meilleures pratiques de production et de mise en marché.",
+        "details": [
+          "Intégration de technologies agricoles modernes et de méthodes de fertilisation raisonnée",
+          "Accompagnement pour l'alignement qualitatif sur les exigences des marchés d'exportation",
+          "Conseil technique et stratégique pour les grands investissements et projets agro-industriels"
+        ]
+      }
+    },
+    "workflow": {
+      "badge": "Méthodologie Opérationnelle",
+      "title": "Notre Processus de Partenariat & d'Approvisionnement en 4 Étapes",
+      "subtitle": "Un cadre d'action rigoureux garantissant la précision technique, la qualité certifiée des intrants et la réussite agronomique de vos campagnes.",
+      "steps": {
+        "1": {
+          "number": "01",
+          "title": "Consultation & Diagnostic Agronomique",
+          "description": "Analyse approfondie des paramètres du sol, des conditions climatiques et des objectifs de rendement pour établir les préconisations adéquates."
+        },
+        "2": {
+          "number": "02",
+          "title": "Sélection des Variétés & Programmes Minéraux",
+          "description": "Identification précise des semences certifiées et des programmes de fertilisation adaptés aux spécificités de votre exploitation."
+        },
+        "3": {
+          "number": "03",
+          "title": "Approvisionnement Sécurisé & Qualité Certifiée",
+          "description": "Expédition rigoureuse depuis nos installations de Noubariya, accompagnée d'une documentation technique complète et d'une traçabilité totale."
+        },
+        "4": {
+          "number": "04",
+          "title": "Accompagnement Technique Continu",
+          "description": "Suivi personnalisé assuré par nos agronomes lors des étapes végétatives déterminantes pour sécuriser le potentiel de production."
+        }
+      }
+    },
+    "cta": {
+      "badge": "Partenariat Institutionnel",
+      "title": "Développez Vos Performances Agricoles avec Seinagro",
+      "subtitle": "Échangez avec nos équipes techniques et commerciales pour étudier vos contrats d'approvisionnement, accords de distribution ou programmes agronomiques dédiés.",
+      "contactButton": "Prendre Rendez-vous Technique",
+      "productsButton": "Explorer Nos Produits"
+    }
+  },
+  "contactPage": {
+    "meta": {
+      "title": "Contactez-nous | Demandes B2B & Partenariats d'Exportation | Seinagro",
+      "description": "Contactez la direction de Seinagro à la ville de Noubariya, gouvernorat de Béheira, Égypte pour l'approvisionnement en semences certifiées et engrais spécialisés en Égypte, en Afrique, dans le monde arabe et à l'international."
+    },
+    "header": {
+      "badge": "Canaux Directs B2B",
+      "title": "Développez Votre Partenariat Agricole avec Seinagro",
+      "subtitle": "Nous accueillons les demandes des distributeurs, grandes exploitations et partenaires institutionnels en Égypte, sur le continent africain, dans la région arabe et dans le monde entier."
+    },
+    "b2bFocus": {
+      "title": "Vocation B2B & Capacités d'Approvisionnement",
+      "description": "Seinagro produit et commercialise des semences certifiées de cultures stratégiques et des engrais spécialisés haute performance. Chaque expédition bénéficie d'une traçabilité rigoureuse, de fiches techniques certifiées et d'un suivi agronomique sur le terrain."
+    }
+  },
+  "partners": {
+    "eyebrow": "RÉSEAU STRATÉGIQUE & PARTENAIRES",
+    "subtitle": "Soutenus par des partenariats durables avec des institutions agricoles de premier plan sur les marchés locaux et internationaux",
+    "partnerAlt": "Partenaire stratégique de Seinagro"
   }
 }

@@ -5,6 +5,7 @@ import { hasLocale } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
+import PartnersMarquee from "@/components/sections/partners-marquee";
 import {
   ArrowUpRight,
   Award,
@@ -95,7 +96,7 @@ export default async function AboutPage({
       <section
         id="about-hero"
         aria-labelledby="about-hero-heading"
-        className="relative min-h-[60vh] lg:min-h-[70vh] flex items-center overflow-hidden bg-forest"
+        className="relative min-h-[320px] md:min-h-[380px] flex items-center overflow-hidden bg-forest"
       >
         <div className="absolute inset-0 z-0">
           <Image
@@ -107,13 +108,13 @@ export default async function AboutPage({
             quality={85}
             className="object-cover object-center"
           />
-          {/* Subtle directional gradient overlay ensuring optimal contrast in light theme */}
+          {/* Directional gradient overlay ensuring optimal contrast */}
           <div className="absolute inset-0 bg-linear-to-b md:bg-linear-to-e from-forest/90 via-forest/75 md:via-forest/65 to-forest/30" />
           <div className="absolute inset-0 bg-radial-[at_start_top] from-transparent via-transparent to-black/20" />
         </div>
 
-        <div className="relative z-10 container mx-auto px-4 md:px-8 pt-24 pb-14 lg:pt-32 lg:pb-20">
-          <div className="max-w-3xl flex flex-col gap-6 text-white">
+        <div className="relative z-10 container mx-auto px-4 md:px-8 py-16 md:py-20 lg:py-24">
+          <div className="max-w-3xl flex flex-col gap-4 md:gap-5 text-white">
             <div className="inline-flex items-center gap-2 self-start px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs md:text-sm font-medium tracking-wide text-wheat">
               <span className="size-2 rounded-full bg-accent animate-pulse" aria-hidden="true" />
               <span>{t("hero.badge")}</span>
@@ -222,6 +223,9 @@ export default async function AboutPage({
           </div>
         </div>
       </section>
+
+      {/* Partners & Founders' Network Marquee */}
+      <PartnersMarquee />
 
       {/* 3. Human Capital & Field Agronomy: Featuring field3.jpeg with object-top */}
       <section
@@ -515,7 +519,7 @@ export default async function AboutPage({
 
             <div className="pt-4 flex flex-wrap items-center justify-center gap-4">
               <Link
-                href="/#contact"
+                href="/contact"
                 className="inline-flex items-center justify-center gap-2 h-12 px-8 rounded-lg bg-accent text-accent-foreground font-semibold text-base transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring shadow-lg"
               >
                 <span>{t("cta.partnerButton")}</span>

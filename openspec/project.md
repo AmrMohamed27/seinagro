@@ -2,8 +2,8 @@
 
 ## Brand Identity & Business Overview
 
-- **Company Name:** Seinagro (Standardized spelling; never use "Sinagro" or old repository brand names)
-- **Headquarters:** Egypt
+- **Company Name:** Seinagro (Official English/French: Seinagro; Official Arabic: **سيناجرو** [with ج]; never use "Sinagro", "سيناغرو", or old repository brand names)
+- **Headquarters:** Nubariya City, Beheira Governorate, Egypt (مدينة النوبارية، محافظة البحيرة، مصر)
 - **Target Markets:** Egypt, African Continent, Arab Region, Asian & International B2B partners
 - **Core Business Pillars:**
   1. Production and development of certified, exclusive, high-yielding strategic crop seeds (climate-change resilient).

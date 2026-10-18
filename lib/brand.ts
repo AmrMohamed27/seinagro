@@ -38,9 +38,9 @@ export const COMPANY_INFO = {
   email: "info@seinagro.com",
   phone: "+20 11 2222 8970",
   headquarters: {
-    en: "Nubaria City, Arab Republic of Egypt",
-    fr: "Ville de Noubaria, République Arabe d'Égypte",
-    ar: "جمهورية مصر العربية – مدينة النوبارية",
+    en: "Nubariya City, Beheira Governorate, Egypt",
+    fr: "Ville de Noubariya, Gouvernorat de Béheira, Égypte",
+    ar: "مدينة النوبارية، محافظة البحيرة، مصر",
   },
 } as const;
 

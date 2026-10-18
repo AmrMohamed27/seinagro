@@ -16,10 +16,9 @@ interface NavbarContentProps {
 export const NAV_ANCHORS = [
   { id: "home", href: "/#home" },
   { id: "about", href: "/about" },
-  { id: "offerings", href: "/#offerings" },
-  { id: "vision", href: "/#vision" },
-  { id: "objectives", href: "/#objectives" },
-  { id: "contact", href: "/#contact" },
+  { id: "products", href: "/products" },
+  { id: "services", href: "/services" },
+  { id: "contact", href: "/contact" },
 ] as const;
 
 export type NavAnchorId = (typeof NAV_ANCHORS)[number]["id"];
@@ -36,12 +35,30 @@ const NavbarContent = ({ scrolled = false }: NavbarContentProps) => {
       setActiveSection("about");
       return;
     }
+    if (pathname === "/products") {
+      setActiveSection("products");
+      return;
+    }
+    if (pathname === "/services") {
+      setActiveSection("services");
+      return;
+    }
+    if (pathname === "/contact") {
+      setActiveSection("contact");
+      return;
+    }
 
     const handleScroll = () => {
       const scrollPosition = window.scrollY + 120;
       for (let i = NAV_ANCHORS.length - 1; i >= 0; i--) {
         const item = NAV_ANCHORS[i];
-        if (item.id === "about") continue;
+        if (
+          item.id === "about" ||
+          item.id === "products" ||
+          item.id === "services" ||
+          item.id === "contact"
+        )
+          continue;
         const element = document.getElementById(item.id);
         if (element) {
           const top = element.offsetTop;

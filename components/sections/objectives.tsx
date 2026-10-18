@@ -7,6 +7,7 @@ import {
   FlaskConical,
   Globe,
   GraduationCap,
+  Play,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
@@ -20,6 +21,10 @@ interface PillarConfig {
     src: string;
     altKey: "plant5" | "field4";
     aspect: string;
+  };
+  video?: {
+    src: string;
+    poster: string;
   };
 }
 
@@ -51,6 +56,10 @@ const OBJECTIVE_PILLARS: PillarConfig[] = [
     icon: Globe,
     gridSpan: "col-span-1 md:col-span-1 lg:col-span-1 lg:row-span-2",
     badgeStyle: "bg-harvest/10 text-harvest-ink dark:text-harvest",
+    video: {
+      src: "/assets/videos/seeds-in-action.mp4",
+      poster: "/assets/images/field1.jpeg",
+    },
   },
   {
     id: "4",
@@ -95,7 +104,7 @@ const ObjectivesSection = () => {
 
         {/* 5-Pillar Bento Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 auto-rows-[minmax(180px,auto)]">
-          {OBJECTIVE_PILLARS.map(({ id, icon: Icon, gridSpan, badgeStyle, image }) => (
+          {OBJECTIVE_PILLARS.map(({ id, icon: Icon, gridSpan, badgeStyle, image, video }) => (
             <motion.div
               key={id}
               whileHover={{ y: -3 }}
@@ -112,6 +121,31 @@ const ObjectivesSection = () => {
                     className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-linear-to-t from-card via-card/10 to-transparent" />
+                </div>
+              )}
+
+              {video && (
+                <div className="relative w-full aspect-9/16 max-h-[360px] sm:max-h-[400px] overflow-hidden bg-black group/video border-b border-border">
+                  <video
+                    src={video.src}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    preload="metadata"
+                    poster={video.poster}
+                    className="size-full object-cover"
+                    aria-label={t("videoAlt")}
+                  />
+                  {/* Floating pill badge in logical corner start-3 top-3 */}
+                  <div className="absolute start-3 top-3 z-10">
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md text-white text-[11px] sm:text-xs font-medium border border-white/20 shadow-xs">
+                      <Play className="size-3 fill-current text-wheat" aria-hidden="true" />
+                      <span>{t("videoBadge")}</span>
+                    </span>
+                  </div>
+                  {/* Bottom gradient overlay for contrast */}
+                  <div className="absolute inset-x-0 bottom-0 h-16 bg-linear-to-t from-card via-card/40 to-transparent pointer-events-none" />
                 </div>
               )}
 

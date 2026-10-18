@@ -2,6 +2,7 @@ import { getHeroImage } from "@/lib/brand";
 import { ArrowUpRight } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
+import { Link } from "@/i18n/navigation";
 
 const REGION_KEYS = ["egypt", "africa", "arab", "asia"] as const;
 
@@ -55,19 +56,19 @@ const HeroSection = () => {
 
           {/* Dual CTAs */}
           <div className="flex flex-wrap items-center gap-3 sm:gap-4 pt-2">
-            <a
-              href="#offerings"
+            <Link
+              href="/products"
               className="inline-flex items-center justify-center gap-2 h-12 px-7 rounded-md bg-accent text-accent-foreground font-semibold text-base transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring shadow-lg"
             >
               <span>{t("exploreCta")}</span>
               <ArrowUpRight className="size-4 rtl:-scale-x-100" aria-hidden="true" />
-            </a>
-            <a
-              href="#contact"
+            </Link>
+            <Link
+              href="/contact"
               className="inline-flex items-center justify-center gap-2 h-12 px-7 rounded-md bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/25 text-white font-medium text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             >
               <span>{t("partnerCta")}</span>
-            </a>
+            </Link>
           </div>
 
           {/* Target Region Chips */}

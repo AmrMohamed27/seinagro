@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "marquee-loop": {
+      "source": "mengto/skills",
+      "sourceType": "github",
+      "skillPath": "agent-skills/web-design/marquee-loop/SKILL.md",
+      "computedHash": "41c72f5e9ca6153b32fa342c0586a0b1cd672569c5af5240eee41b6421c7cebd"
+    }
+  }
+}

@@ -8,6 +8,8 @@
   "Nav": {
     "home": "Home",
     "about": "About",
+    "products": "Our Products",
+    "services": "Our Services",
     "offerings": "Offerings",
     "vision": "Vision & Mission",
     "objectives": "Strategic Objectives",
@@ -52,11 +54,16 @@
     "sectionBadge": "Core Business Pillars",
     "title": "Integrated Agricultural Solutions",
     "subtitle": "Engineered for climate resilience, maximum productivity, and sustainable soil vitality.",
+    "exploreAllCta": "Explore Full Product Portfolio",
     "seeds": {
       "badge": "Certified High-Yield",
       "title": "Certified Strategic Crop Seeds",
       "description": "Production and development of certified, exclusive, high-yielding strategic crop seeds bred specifically for climate-change resilience and disease tolerance.",
       "climateResilience": "Bred for extreme climate tolerance, water efficiency, and verified germination vitality.",
+      "tag": "Certified Strategic Seeds",
+      "exploreCta": "Explore Certified Seeds",
+      "videoBadge": "Field Proof • Seeds in Action",
+      "videoAlt": "Authentic field recording demonstrating Seinagro certified seeds performance in the field",
       "items": {
         "1": "Proprietary single & triple cross hybrid varieties",
         "2": "Superior genetic purity and rigorous laboratory certification",
@@ -69,11 +76,41 @@
       "title": "Straight, Compound & Specialized Organic Fertilizers",
       "description": "Trading and distribution of premium straight, compound, and specialized organic fertilizers formulated to enhance soil biology and maximize nutrient efficiency.",
       "climateResilience": "Advanced soil conditioning formulas designed to sustain fertility against climatic stress.",
+      "tags": {
+        "straight": "Straight Fertilizers",
+        "compound": "Compound NPKs",
+        "organic": "Specialized Organic"
+      },
+      "exploreCta": "Explore Nutrition Solutions",
       "items": {
         "1": "High-purity straight fertilizers (nitrogen, phosphorus, potassium)",
         "2": "Balanced NPK compound formulas customized for strategic crops",
         "3": "Bio-active specialized organic formulations that restore soil vitality",
         "4": "Enhanced nutrient uptake and eco-friendly sustainable footprint"
+      }
+    }
+  },
+  "ServicesPreview": {
+    "sectionBadge": "Our Services & Agronomic Solutions",
+    "title": "Comprehensive Agronomic Solutions Grounded in Multinational Leadership",
+    "subtitle": "From Nubariya, Beheira Governorate, Seinagro delivers end-to-end operational support to agribusinesses and institutional partners across Egypt, Africa, and the Arab world.",
+    "exploreCta": "Explore Our B2B Services",
+    "cards": {
+      "rAndD": {
+        "title": "Exclusive Seed Breeding & R&D",
+        "description": "Scientific breeding and screening programs to develop climate-resilient, high-yielding strategic crop varieties."
+      },
+      "trading": {
+        "title": "Fertilizer Trading & Distribution",
+        "description": "Dependable bulk and commercial supply chains serving mega agricultural projects and export corridors."
+      },
+      "fieldSupport": {
+        "title": "Hands-On Field Agronomy",
+        "description": "Dedicated agronomists providing continuous on-site guidance, diagnostic audits, and nutrition scheduling."
+      },
+      "techTransfer": {
+        "title": "Global Tech Transfer & Advisory",
+        "description": "Leveraging founders' multinational track records to adopt modern global production practices and export compliance."
       }
     }
   },
@@ -93,6 +130,8 @@
     "sectionBadge": "Strategic Direction",
     "title": "5 Strategic Objectives",
     "subtitle": "Our institutional roadmap for sustainable growth, scientific leadership, and regional impact.",
+    "videoBadge": "Field Proof • Seeds in Action",
+    "videoAlt": "Authentic field recording demonstrating Seinagro certified seeds performance in the field",
     "pillars": {
       "1": {
         "title": "Climate-Resilient R&D",
@@ -104,7 +143,7 @@
       },
       "3": {
         "title": "Regional & Global Expansion",
-        "description": "Strengthen market share in Egypt while executing targeted expansion across African, Arab, and global markets."
+        "description": "Consolidating our leadership and market presence across Egypt, while executing a targeted international expansion to establish agile B2B export pipelines, distribution alliances, and technical corridors across Africa, the Arab Region, and high-growth global markets."
       },
       "4": {
         "title": "Scientific & Field Human Capital",
@@ -112,7 +151,7 @@
       },
       "5": {
         "title": "Global Tech Transfer",
-        "description": "Leverage founders' multinational experience to adopt the latest global technologies in seed production and marketing."
+        "description": "Channeling our founders' decades of multinational leadership to transfer and localize advanced hybrid seed technologies, bio-active soil formulations, and digital precision crop monitoring systems across all target territories."
       }
     }
   },
@@ -120,11 +159,18 @@
     "sectionBadge": "Global Inquiries",
     "title": "Export Inquiry & Partnership",
     "subtitle": "Connect directly with our international export and agronomic team.",
+    "homeCta": {
+      "badge": "Institutional Partnership",
+      "title": "Partner with Seinagro Across Egypt & Global Markets",
+      "subtitle": "Connect with our international export and agronomic team to discuss certified seed supply, specialized fertilizer distribution, and strategic agribusiness cooperation.",
+      "contactButton": "Contact Our Export Team",
+      "exploreButton": "Explore Products"
+    },
     "hq": {
       "title": "Official Headquarters",
       "country": "Arab Republic of Egypt",
-      "city": "Nubaria City",
-      "address": "Nubaria City, Arab Republic of Egypt",
+      "city": "Nubariya City, Beheira Governorate",
+      "address": "Nubariya City, Beheira Governorate, Egypt",
       "phone": "+20 11 2222 8970",
       "phoneLabel": "Phone",
       "email": "info@seinagro.com",
@@ -172,13 +218,15 @@
     "tagline": "Pioneering seed and fertilizer innovation across Egypt and international markets.",
     "copyright": "© Seinagro. All rights reserved.",
     "headquartersLabel": "Headquarters",
-    "headquartersValue": "Nubaria City, Arab Republic of Egypt",
+    "headquartersValue": "Nubariya City, Beheira Governorate, Egypt",
     "phoneLabel": "Phone",
     "phoneValue": "+20 11 2222 8970",
     "emailLabel": "Email",
     "emailValue": "info@seinagro.com",
     "quickLinks": "Quick Links",
-    "pillarsLabel": "Core Pillars"
+    "pillarsLabel": "Core Pillars",
+    "brandName": "SEINAGRO",
+    "subTagline": "Certified Seeds & Specialized Fertilizers"
   },
   "NotFound": {
     "title": "Page Not Found",
@@ -309,5 +357,197 @@
       "partnerButton": "Partner With Us",
       "exploreButton": "Explore Offerings"
     }
+  },
+  "productsPage": {
+    "meta": {
+      "title": "Our Products | Certified Strategic Seeds & Advanced Fertilizers",
+      "description": "Explore Seinagro's high-yielding certified crop seeds and climate-resilient plant nutrition solutions engineered for Egypt, Africa, and the Arab region."
+    },
+    "hero": {
+      "badge": "Product Portfolio",
+      "title": "High-Yielding Certified Seeds & Climate-Resilient Plant Nutrition",
+      "subtitle": "Engineered for maximum genetic vigor, stress adaptation, and balanced soil fertility across Egypt, the African continent, and the Arab region."
+    },
+    "divisions": {
+      "badge": "Core Divisions",
+      "title": "Four Pillars of Agronomic Performance",
+      "subtitle": "Comprehensive agricultural inputs engineered to deliver verifiable yield stability and optimize resource efficiency.",
+      "seeds": {
+        "tag": "Genetic Excellence",
+        "title": "Certified & Exclusive Strategic Crop Seeds",
+        "description": "High-yielding, certified seed varieties bred specifically for climate-change resilience and regional soil adaptation across strategic food crops.",
+        "features": [
+          "Rigorous genetic purity and certified germination benchmarks",
+          "Engineered tolerance against regional heat and salinity stress",
+          "Bred specifically for strategic crops vital to food security"
+        ]
+      },
+      "straight": {
+        "tag": "Targeted Nutrition",
+        "title": "Straight Fertilizers",
+        "description": "Targeted single-nutrient formulations delivering concentrated nitrogen, phosphorus, or potassium for precision crop growth stages.",
+        "features": [
+          "High nutrient concentration for efficient uptake",
+          "Rapid dissolution and immediate bioavailability",
+          "Precise stage-specific vegetative and reproductive correction"
+        ]
+      },
+      "compound": {
+        "tag": "Balanced Fertility",
+        "title": "Compound Fertilizers",
+        "description": "Balanced multi-nutrient solutions designed to sustain root architecture, vegetative vigor, and maximum yield stability throughout the season.",
+        "features": [
+          "Homogeneous granule nutrient distribution",
+          "Optimized macro and secondary element synergy",
+          "Reliable performance across diverse irrigation systems"
+        ]
+      },
+      "organic": {
+        "tag": "Soil Regeneration",
+        "title": "Specialized Organic Fertilizers",
+        "description": "Sustainable bio-organic formulations designed to restore soil microbial vitality, enhance water retention, and combat environmental stress.",
+        "features": [
+          "Enhances soil structure, cation exchange, and aeration",
+          "Strengthens root rhizosphere immunity against abiotic shock",
+          "Compliant with sustainable and export-grade agricultural standards"
+        ]
+      }
+    },
+    "quality": {
+      "badge": "Agronomic Standards",
+      "title": "Rigorous Quality & Climate-Resilience Standards",
+      "description": "Every batch produced, conditioned, and distributed by Seinagro complies with stringent quality control protocols, field verification trials, and international agronomic benchmarks.",
+      "points": [
+        {
+          "title": "Certified Genetic Purity",
+          "description": "Every seed lot undergoes systematic germination testing, vigor assessment, and varietal integrity verification."
+        },
+        {
+          "title": "Precision Nutrient Formulations",
+          "description": "Fertilizers are verified for exact elemental solubility, chemical stability, and predictable soil interaction."
+        },
+        {
+          "title": "Regional Climate Adaptation",
+          "description": "Tested across diverse agro-climatic conditions across Egypt and North/Sub-Saharan Africa to ensure thermal and water stress resilience."
+        }
+      ]
+    },
+    "cta": {
+      "badge": "B2B Supply & Distribution",
+      "title": "Request Seasonal Availability & Technical Data Sheets",
+      "subtitle": "Partner with Seinagro for reliable commercial supply, bulk distribution tenders, and customized agronomic nutritional programs.",
+      "catalogButton": "Request B2B Catalog / RFQ",
+      "consultButton": "Consult Agronomic Team"
+    }
+  },
+  "servicesPage": {
+    "meta": {
+      "title": "Our Services | Agricultural Production, Trading & Technical Advisory",
+      "description": "End-to-end agricultural production, regional fertilizer trading, and expert agronomic field support backed by decades of multinational executive leadership."
+    },
+    "hero": {
+      "badge": "Integrated Services",
+      "title": "Comprehensive Agricultural Solutions Backed by Multinational Mastery",
+      "subtitle": "End-to-end seed development, international supply chain distribution, and practical field guidance across Egypt, Africa, and global markets."
+    },
+    "pillars": {
+      "badge": "Service Capabilities",
+      "title": "Four Strategic Operational Pillars",
+      "subtitle": "Combining world-class R&D innovation with hands-on field implementation to empower farmers, distributors, and agribusiness partners.",
+      "seedDevelopment": {
+        "tag": "R&D & Breeding",
+        "title": "Seed Breeding, Development & Production",
+        "description": "Investing in agricultural creativity and research programs to develop exclusive, climate-resilient strategic crop varieties that guarantee superior yield.",
+        "details": [
+          "Selection of high-potential genetic lines adapted to arid soils",
+          "Multi-location field screening and trait verification",
+          "Certified commercial seed multiplication and processing"
+        ]
+      },
+      "supplyChain": {
+        "tag": "Distribution & Trading",
+        "title": "Fertilizer Trading & Supply Chain Distribution",
+        "description": "Reliable B2B supply operations across the Egyptian market—anchored in Nubariya, Beheira Governorate—with targeted export logistics across Africa and the Arab world.",
+        "details": [
+          "Strategic warehousing and logistics hub in Nubariya",
+          "Bulk and wholesale commercial trading capabilities",
+          "Streamlined export compliance for African and Arab trade corridors"
+        ]
+      },
+      "fieldSupport": {
+        "tag": "Applied Agronomy",
+        "title": "Agronomic Field Support & Practical Expertise",
+        "description": "Deploying a dedicated technical workforce that blends advanced academic credentials with extensive hands-on field guidance directly alongside growers.",
+        "details": [
+          "On-site crop health diagnostics and soil nutrient audits",
+          "Customized nutritional and fertilization scheduling",
+          "Ongoing field monitoring from planting through harvest"
+        ]
+      },
+      "techTransfer": {
+        "tag": "Global Advisory",
+        "title": "Global Technology Transfer & Market Advisory",
+        "description": "Leveraging the founders' multinational track record to transfer modern production technologies and global marketing best practices to regional agricultural partners.",
+        "details": [
+          "Integration of cutting-edge agronomic methodologies",
+          "Export market orientation and crop quality alignment",
+          "Strategic consultation for large-scale agricultural investment projects"
+        ]
+      }
+    },
+    "workflow": {
+      "badge": "Operational Methodology",
+      "title": "Our 4-Step Partnership & Supply Workflow",
+      "subtitle": "A disciplined, quality-assured framework ensuring predictable agricultural success and long-term partnership value.",
+      "steps": {
+        "1": {
+          "number": "01",
+          "title": "Consultation & Crop Assessment",
+          "description": "We analyze soil parameters, local climatic conditions, crop history, and yield targets to formulate tailored agronomic recommendations."
+        },
+        "2": {
+          "number": "02",
+          "title": "Variety & Fertilizer Selection",
+          "description": "Matching certified crop seeds and specialized fertilizer programs precisely aligned with the grower's regional climate and commercial goals."
+        },
+        "3": {
+          "number": "03",
+          "title": "Quality-Assured Supply",
+          "description": "Timely dispatch from our Nubariya facilities under strict quality controls, complete technical data documentation, and verified lot traceability."
+        },
+        "4": {
+          "number": "04",
+          "title": "Ongoing Field Follow-up",
+          "description": "Our agronomic specialists remain engaged on-site through critical vegetative and reproductive stages to safeguard yield performance."
+        }
+      }
+    },
+    "cta": {
+      "badge": "Institutional Partnership",
+      "title": "Empower Your Agricultural Enterprise with Seinagro",
+      "subtitle": "Connect with our advisory and commercial teams to discuss distribution agreements, supply contracts, or tailored agronomic programs.",
+      "contactButton": "Schedule Technical Consultation",
+      "productsButton": "Explore Products"
+    }
+  },
+  "contactPage": {
+    "meta": {
+      "title": "Contact Us | Direct B2B Inquiry & Export Partnership | Seinagro",
+      "description": "Connect with Seinagro's executive team in Nubariya City, Beheira Governorate, Egypt for certified strategic crop seeds and specialized fertilizer supply across Egypt, Africa, the Arab region, and global markets."
+    },
+    "header": {
+      "badge": "Direct B2B Channels",
+      "title": "Partner with Seinagro Across Egypt & Global Markets",
+      "subtitle": "Welcoming inquiries from agricultural distributors, commercial growers, and institutional partners across Egypt, the African continent, the Arab region, and worldwide."
+    },
+    "b2bFocus": {
+      "title": "B2B Focus & Supply Capabilities",
+      "description": "Seinagro develops and supplies certified strategic crop seeds and high-performance fertilizers. Every shipment is backed by verified technical documentation, laboratory quality assurance, and on-site agronomic advisory."
+    }
+  },
+  "partners": {
+    "eyebrow": "STRATEGIC NETWORK & PARTNERS",
+    "subtitle": "Backed by enduring partnerships with leading agricultural institutions across local and international markets",
+    "partnerAlt": "Seinagro Strategic Partner"
   }
 }
