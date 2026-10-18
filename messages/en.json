@@ -547,7 +547,10 @@
   },
   "partners": {
     "eyebrow": "STRATEGIC NETWORK & PARTNERS",
-    "subtitle": "Backed by enduring partnerships with leading agricultural institutions across local and international markets",
+    "heading": "Trusted Strategic Agribusiness Alliances",
+    "subtitle": "Backed by enduring partnerships with leading agricultural institutions and distributors across local and international markets.",
+    "becomePartner": "Become a Regional Partner",
+    "networkCallout": "+ Regional & Global Export Network",
     "partnerAlt": "Seinagro Strategic Partner"
   }
 }

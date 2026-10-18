@@ -547,7 +547,10 @@
   },
   "partners": {
     "eyebrow": "RÉSEAU STRATÉGIQUE & PARTENAIRES",
-    "subtitle": "Soutenus par des partenariats durables avec des institutions agricoles de premier plan sur les marchés locaux et internationaux",
+    "heading": "Alliances Stratégiques Agro-industrielles de Confiance",
+    "subtitle": "Soutenus par des partenariats durables avec des institutions agricoles et des distributeurs de premier plan sur les marchés locaux et internationaux.",
+    "becomePartner": "Devenir un partenaire régional",
+    "networkCallout": "+ Réseau d'export régional et mondial",
     "partnerAlt": "Partenaire stratégique de Seinagro"
   }
 }

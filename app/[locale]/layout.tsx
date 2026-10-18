@@ -78,6 +78,9 @@ export default async function LocaleLayout({
   const direction = getLangDir(locale);
   return (
     <html lang={locale} dir={direction} suppressHydrationWarning>
+      <head>
+        <meta name="apple-mobile-web-app-title" content="Seinagro" />
+      </head>
       <body
         className={cn(
           "antialiased min-h-screen bg-background text-foreground",
@@ -88,16 +91,16 @@ export default async function LocaleLayout({
             : `${latinFont.className} leading-normal`
         )}
       >
-          <NextIntlClientProvider>
-            <Header />
-            <main>
-              <Suspense fallback={<Loader />}>
-                {children}
-                <Toaster />
-              </Suspense>
-            </main>
-            <Footer />
-          </NextIntlClientProvider>
+        <NextIntlClientProvider>
+          <Header />
+          <main>
+            <Suspense fallback={<Loader />}>
+              {children}
+              <Toaster />
+            </Suspense>
+          </main>
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

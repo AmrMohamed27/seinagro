@@ -5,7 +5,6 @@ import { hasLocale } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
-import PartnersMarquee from "@/components/sections/partners-marquee";
 import {
   ArrowUpRight,
   Award,
@@ -116,7 +115,10 @@ export default async function AboutPage({
         <div className="relative z-10 container mx-auto px-4 md:px-8 py-16 md:py-20 lg:py-24">
           <div className="max-w-3xl flex flex-col gap-4 md:gap-5 text-white">
             <div className="inline-flex items-center gap-2 self-start px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs md:text-sm font-medium tracking-wide text-wheat">
-              <span className="size-2 rounded-full bg-accent animate-pulse" aria-hidden="true" />
+              <span
+                className="size-2 rounded-full bg-accent animate-pulse"
+                aria-hidden="true"
+              />
               <span>{t("hero.badge")}</span>
             </div>
 
@@ -224,9 +226,6 @@ export default async function AboutPage({
         </div>
       </section>
 
-      {/* Partners & Founders' Network Marquee */}
-      <PartnersMarquee />
-
       {/* 3. Human Capital & Field Agronomy: Featuring field3.jpeg with object-top */}
       <section
         id="human-capital"
@@ -285,7 +284,10 @@ export default async function AboutPage({
                     key={key}
                     className="flex items-start gap-3 p-3.5 rounded-xl bg-surface-cream/50 border border-border"
                   >
-                    <CheckCircle2 className="size-4 text-forest shrink-0 mt-0.5" aria-hidden="true" />
+                    <CheckCircle2
+                      className="size-4 text-forest shrink-0 mt-0.5"
+                      aria-hidden="true"
+                    />
                     <span className="text-xs sm:text-sm font-medium text-foreground/90 leading-snug">
                       {t(`humanCapital.features.${key}`)}
                     </span>
@@ -346,7 +348,10 @@ export default async function AboutPage({
                   </p>
                 </div>
                 <div className="pt-4 border-t border-border text-xs text-muted-foreground flex items-center gap-2">
-                  <Sparkles className="size-4 text-forest shrink-0" aria-hidden="true" />
+                  <Sparkles
+                    className="size-4 text-forest shrink-0"
+                    aria-hidden="true"
+                  />
                   <span>{t("images.plant4")}</span>
                 </div>
               </div>
@@ -365,7 +370,10 @@ export default async function AboutPage({
                 <div className="absolute inset-0 bg-linear-to-t from-card via-card/25 to-transparent" />
                 <div className="absolute top-4 start-4">
                   <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-soil text-white text-xs font-semibold shadow-xs">
-                    <Target className="size-3.5 text-wheat" aria-hidden="true" />
+                    <Target
+                      className="size-3.5 text-wheat"
+                      aria-hidden="true"
+                    />
                     {t("visionMission.mission.title")}
                   </span>
                 </div>
@@ -381,7 +389,10 @@ export default async function AboutPage({
                   </p>
                 </div>
                 <div className="pt-4 border-t border-border text-xs text-muted-foreground flex items-center gap-2">
-                  <Sparkles className="size-4 text-harvest-ink shrink-0" aria-hidden="true" />
+                  <Sparkles
+                    className="size-4 text-harvest-ink shrink-0"
+                    aria-hidden="true"
+                  />
                   <span>{t("images.plant3")}</span>
                 </div>
               </div>
@@ -462,7 +473,10 @@ export default async function AboutPage({
                   <div className="absolute inset-0 bg-linear-to-t from-card via-card/10 to-transparent" />
                 </div>
                 <div className="p-4 flex items-start gap-2.5">
-                  <ShieldCheck className="size-4 text-forest shrink-0 mt-0.5" aria-hidden="true" />
+                  <ShieldCheck
+                    className="size-4 text-forest shrink-0 mt-0.5"
+                    aria-hidden="true"
+                  />
                   <p className="text-xs text-muted-foreground leading-snug">
                     {t("images.plant2")}
                   </p>
@@ -482,7 +496,10 @@ export default async function AboutPage({
                   <div className="absolute inset-0 bg-linear-to-t from-card via-card/10 to-transparent" />
                 </div>
                 <div className="p-4 flex items-start gap-2.5">
-                  <Sparkles className="size-4 text-growth shrink-0 mt-0.5" aria-hidden="true" />
+                  <Sparkles
+                    className="size-4 text-growth shrink-0 mt-0.5"
+                    aria-hidden="true"
+                  />
                   <p className="text-xs text-muted-foreground leading-snug">
                     {t("images.plant6")}
                   </p>
@@ -523,7 +540,10 @@ export default async function AboutPage({
                 className="inline-flex items-center justify-center gap-2 h-12 px-8 rounded-lg bg-accent text-accent-foreground font-semibold text-base transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring shadow-lg"
               >
                 <span>{t("cta.partnerButton")}</span>
-                <ArrowUpRight className="size-4 rtl:-scale-x-100" aria-hidden="true" />
+                <ArrowUpRight
+                  className="size-4 rtl:-scale-x-100"
+                  aria-hidden="true"
+                />
               </Link>
               <Link
                 href="/#offerings"

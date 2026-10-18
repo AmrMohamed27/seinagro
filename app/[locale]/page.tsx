@@ -4,7 +4,6 @@ import HomeCtaSection from "@/components/sections/home-cta";
 import LegacySection from "@/components/sections/legacy";
 import ObjectivesSection from "@/components/sections/objectives";
 import OfferingsSection from "@/components/sections/offerings";
-import PartnersMarquee from "@/components/sections/partners-marquee";
 import ServicesPreviewSection from "@/components/sections/services-preview";
 import VisionMissionSection from "@/components/sections/vision-mission";
 
@@ -14,10 +13,7 @@ export default function Home() {
       {/* 1. Hero */}
       <HeroSection />
 
-      {/* 2. Trusted Partners & Network Logo Marquee */}
-      <PartnersMarquee />
-
-      {/* 3. Founders' Multinational Legacy & About */}
+      {/* 2. Founders' Multinational Legacy & About */}
       <AnimatedSection id="about-wrapper">
         <LegacySection />
       </AnimatedSection>
@@ -37,12 +33,12 @@ export default function Home() {
         <VisionMissionSection />
       </AnimatedSection>
 
-      {/* 5. Strategic Objectives Bento */}
+      {/* 6. Strategic Objectives Bento */}
       <AnimatedSection id="objectives-wrapper">
         <ObjectivesSection />
       </AnimatedSection>
 
-      {/* 6. B2B Export Partnership CTA (routes to /contact, sitting flush above Footer) */}
+      {/* 7. B2B Export Partnership CTA (routes to /contact, sitting flush above Footer) */}
       <AnimatedSection id="contact-wrapper">
         <HomeCtaSection />
       </AnimatedSection>
